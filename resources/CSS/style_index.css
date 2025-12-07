@@ -1,0 +1,154 @@
+body {
+    position: relative;
+}
+
+/*
+To make dark/light mode applied for all the page we take switcher out of document stream by
+    position: absolute;
+and then all siblings under it can fill switch between light and dark theme. 
+
+All this done due to limitation of pure HTML/CSS (we can't reach parent nodes
+relative to the current) -  so body tag is unreachable from our point of view. 
+*/
+#color-schema-checkbox {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#color-schema-label {    
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: medium;
+    margin-right: 1rem;
+}
+
+.full-site-design {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar should be horizontal oriented */
+.main-navigation {
+    display: flex;
+}
+
+/* Border color defined based on mode in other CSS 
+    Whithout mentioning the border color, Chrome will
+    use the color of the text to show borders
+*/
+.main-navigation div{
+    border-left: solid 2px var(--my-border-color, #453ada);
+    border-bottom: solid 2px var(--my-border-color, #453ada); 
+    border-top: solid 2px var(--my-border-color, #453ada);
+    padding:1%;
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-navigation div:last-child {
+      border-right: solid 2px var(--my-border-color, #453ada);
+}
+
+.main-navigation div:hover{
+    font-size: large;
+}
+
+.main-section {
+    flex: 1;
+}
+
+.h1-section{
+    padding: 10px;
+    margin: 10 px;
+    text-align: center;
+}
+
+.man_avatar {
+    width: 250px;
+    max-width: 40vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+
+/*section related to the middle section
+    that include photo + text. 
+    It also related to responsive behavior
+*/
+.text-image-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*TODO: remove after finishing */
+    padding: 5px;
+    border: 2px solid green;
+}
+
+.side-image {
+    width: 250px;
+    max-width: 40vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+.text-content {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    .text-image-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .side-image {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .text-content {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.resource{
+    margin: 25px;
+}
+
+/*
+size of used technologies pictures
+*/
+.my-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+}
+

@@ -1,0 +1,49 @@
+:root {
+    --my-bg-color: black;
+    --my-txt-color: green;
+    --my-border-color: green;
+    --my-img-color: black;
+} 
+
+#color-schema-checkbox:checked ~ *,
+#color-schema-checkbox:checked ~ * * {
+    --my-bg-color: white;
+    --my-txt-color: black;
+    --my-border-color: #453ada;
+    --my-img-color: red;
+}
+
+.color-scheme-mode {
+    background-color: var(--my-bg-color, #aabbcc);
+    border-color: var(--my-border-color, red);
+    color: var(--my-txt-color, #453ada);
+}
+
+.color-scheme-mode a,
+.color-scheme-mode a:link,
+.color-scheme-mode a:visited,
+.color-scheme-mode a:hover,
+.color-scheme-mode a:active {
+    color: var(--my-txt-color) !important;
+    text-decoration: none !important;
+}
+
+/*
+one of the company used monocolored (totally white) SVG logo
+to make logo visible on light mode we need to invert colors
+*/
+.mono-white-logo {
+    filter: invert(0);
+}
+
+.mono-black-logo {
+    filter: invert(1);
+}
+
+#color-schema-checkbox:checked ~ * .mono-white-logo {
+    filter: invert(1);
+}
+
+#color-schema-checkbox:checked ~ * .mono-black-logo {
+    filter: invert(0);
+}
