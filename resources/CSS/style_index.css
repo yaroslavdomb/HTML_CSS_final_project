@@ -40,6 +40,73 @@ relative to the current) -  so body tag is unreachable from our point of view.
 /* Navigation bar should be horizontal oriented */
 .main-navigation {
     display: flex;
+    flex-direction: row;
+}
+
+.menu-on-narrow-screen + label {
+    display: none;
+}
+
+/*
+display: none; - we do not need to see 
+*/
+.menu-on-narrow-screen {    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .menu-on-narrow-screen + label {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.5em 1em;
+        cursor: pointer;        
+        z-index: 10;
+    }
+
+    /*
+    display: none; - looks like we donot need this as the status does not changed at all
+                        but without this line HTML do not recognize checker status
+    */
+    .main-navigation {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 2.5em;
+        left: 0;
+        width: 135px;
+        z-index: 5;
+    }
+
+    /*
+    As we still have no JS, so better to use max predictable selectors style that's why
+        .menu-on-narrow-screen:checked + label + .main-navigation 
+    is better than shorter record of type
+        .menu-on-narrow-screen:checked ~ .main-navigation
+    */
+    .menu-on-narrow-screen:checked + label + .main-navigation {
+        display: flex;
+    }
+
+    /*
+    100% of its parent, means from .main-navigation width configuration
+    */
+    .main-navigation > div {
+        width: 100%;
+    }
+
+    .main-navigation > div a {
+        display: block;
+        text-align: left;
+        padding: 1em 1em 1em 2em;
+    }
 }
 
 /* Border color defined based on mode in other CSS 
@@ -99,9 +166,8 @@ relative to the current) -  so body tag is unreachable from our point of view.
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    /*TODO: remove after finishing */
     padding: 5px;
-    border: 2px solid green;
+    border: 2px var(--my-border-color) solid;
 }
 
 .side-image {
