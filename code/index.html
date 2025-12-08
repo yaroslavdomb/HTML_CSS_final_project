@@ -18,24 +18,24 @@
         off</label>
 
     <div class="color-scheme-mode full-site-design">
-        <input type="checkbox" id="menu-on-narrow-screen" class="menu-on-narrow-screen"/>
+        <input type="checkbox" id="menu-on-narrow-screen" class="menu-on-narrow-screen" />
         <label for="menu-on-narrow-screen">☰ Menu</label>
-        <nav class="main-navigation ">
+        <nav class="main-navigation">
             <div>
-                <a href="index.html" alt="link to the Main page" target="_blank" tabindex="2"
-                    class="growing-text">Main</a>
+                <a href="#main-section-id" target="_self" tabindex="2" class="growing-text"
+                    aria-keyshortcuts="Alt+Shift+m" accesskey="m">Main</a>
             </div>
             <div>
-                <a href="subProject.html" alt="link to the Main page" target="_blank" tabindex="3"
-                    class="growing-text">Sub-projects</a>
+                <a href="subProject.html" target="_self" tabindex="3" class="growing-text"
+                    aria-keyshortcuts="Alt+Shift+s" accesskey="s">Sub-projects</a>
             </div>
             <div>
-                <a href="About.html" alt="link to the About page" target="_blank" tabindex="4"
-                    class="growing-text">About</a>
+                <a href="About.html" target="_self" tabindex="4" class="growing-text" aria-keyshortcuts="Alt+Shift+a"
+                    accesskey="a">About</a>
             </div>
             <div>
-                <a href="Connect.html" alt="link to the Connect page" target="_blank" tabindex="5"
-                    class="growing-text">Connect</a>
+                <a href="Connect.html" target="_self" tabindex="5" class="growing-text" aria-keyshortcuts="Alt+Shift+c"
+                    accesskey="c">Connect</a>
             </div>
         </nav>
 
@@ -43,20 +43,24 @@
             <img class="logo color-scheme-mode" src="../resources/pics/my_logo_1.png" alt="Image for my logo">
         </section>
 
-        <main class="main-section">
+        <main class="main-section" id="main-section-id">
             <header>
                 <h1 class="h1-section">Short resume for the section</h1>
             </header>
             <article class="text-image-block">
                 <img id="man_avatar" class="side-image" src="../resources/pics/avatar.jpg" alt="man avatar">
                 <p class="text-content">
-                    Hi, usually I position myself as a BE developer. I deal with DBs (both <abbr title="Oracle/PostgreSQL/MySQL">SQL</abbr> and <abbr
-                        title="Mongo and Redis. A bit, but in use )">noSQL</abbr>) and work with microservice and monolithic architectures.
-                    <br><br> 
-                    But today, you’re going to discover me as a UI fullstack engineer.              Yeah, it will be a nightmare, especially because we haven’t learned JS yet, so all the tricks on that page are done
+                    Hi, usually I position myself as a BE developer. I deal with DBs (both <abbr
+                        title="Oracle/PostgreSQL/MySQL">SQL</abbr> and <abbr
+                        title="Mongo and Redis. A bit, but in use )">noSQL</abbr>) and work with microservice and
+                    monolithic architectures.
+                    <br><br>
+                    But today, you’re going to discover me as a UI fullstack engineer. Yeah, it will be a nightmare,
+                    especially because we haven’t learned JS yet, so all the tricks on that page are done
                     purely with CSS and HTML.
                     <br><br>
-                    Be patient—I'm going to improve my knowledge and create something that won’t fail every time on start. At least not at
+                    Be patient—I'm going to improve my knowledge and create something that won’t fail every time on
+                    start. At least not at
                     the beginning. )))
                 </p>
             </article>
