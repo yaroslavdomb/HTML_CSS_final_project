@@ -37,7 +37,6 @@ relative to the current) -  so body tag is unreachable from our point of view.
     flex-direction: column;
 }
 
-/* Navigation bar should be horizontal oriented */
 .main-navigation {
     display: flex;
     flex-direction: row;
@@ -47,9 +46,6 @@ relative to the current) -  so body tag is unreachable from our point of view.
     display: none;
 }
 
-/*
-display: none; - we do not need to see 
-*/
 .menu-on-narrow-screen {    
     display: none;
     position: absolute;
@@ -70,10 +66,6 @@ display: none; - we do not need to see
         z-index: 10;
     }
 
-    /*
-    display: none; - looks like we donot need this as the status does not changed at all
-                        but without this line HTML do not recognize checker status
-    */
     .main-navigation {
         display: none;
         flex-direction: column;
@@ -85,19 +77,10 @@ display: none; - we do not need to see
         z-index: 5;
     }
 
-    /*
-    As we still have no JS, so better to use max predictable selectors style that's why
-        .menu-on-narrow-screen:checked + label + .main-navigation 
-    is better than shorter record of type
-        .menu-on-narrow-screen:checked ~ .main-navigation
-    */
     .menu-on-narrow-screen:checked + label + .main-navigation {
         display: flex;
     }
 
-    /*
-    100% of its parent, means from .main-navigation width configuration
-    */
     .main-navigation > div {
         width: 100%;
     }
@@ -107,12 +90,14 @@ display: none; - we do not need to see
         text-align: left;
         padding: 1em 1em 1em 2em;
     }
+
+    .main-navigation div {
+        border-style: none;
+        border-left: solid 5px #fff;
+    }
+
 }
 
-/* Border color defined based on mode in other CSS 
-    Whithout mentioning the border color, Chrome will
-    use the color of the text to show borders
-*/
 .main-navigation div{
     border-left: solid 2px var(--my-border-color, #453ada);
     border-bottom: solid 2px var(--my-border-color, #453ada); 
