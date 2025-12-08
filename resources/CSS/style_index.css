@@ -55,50 +55,7 @@ relative to the current) -  so body tag is unreachable from our point of view.
     cursor: pointer;
 }
 
-@media (max-width: 800px) {
-    .menu-on-narrow-screen + label {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 0.5em 1em;
-        cursor: pointer;        
-        z-index: 10;
-    }
-
-    .main-navigation {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        top: 2.5em;
-        left: 0;
-        width: 135px;
-        z-index: 5;
-    }
-
-    .menu-on-narrow-screen:checked + label + .main-navigation {
-        display: flex;
-    }
-
-    .main-navigation > div {
-        width: 100%;
-    }
-
-    .main-navigation > div a {
-        display: block;
-        text-align: left;
-        padding: 1em 1em 1em 2em;
-    }
-
-    .main-navigation div {
-        border-style: none;
-        border-left: solid 5px #fff;
-    }
-
-}
-
-.main-navigation div{
+.main-navigation div {
     border-left: solid 2px var(--my-border-color, #453ada);
     border-bottom: solid 2px var(--my-border-color, #453ada); 
     border-top: solid 2px var(--my-border-color, #453ada);
@@ -171,6 +128,52 @@ relative to the current) -  so body tag is unreachable from our point of view.
 }
 
 @media (max-width: 800px) {
+    /*
+    Navigate menu responsive code
+    */
+    .menu-on-narrow-screen + label {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.5em 1em;
+        cursor: pointer;        
+        z-index: 10;
+    }
+
+    .main-navigation {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 2.5em;
+        left: 0;
+        width: 135px;
+        z-index: 5;
+    }
+
+    .menu-on-narrow-screen:checked + label + .main-navigation {
+        display: flex;
+    }
+
+    .main-navigation > div {
+        width: 100%;        
+    }
+
+    .main-navigation > div a {
+        display: block;
+        text-align: left;
+        padding: 1em 1em 1em 2em;
+    }
+
+    .main-navigation div,
+    .main-navigation div:last-child {
+        border: none;
+    }
+
+    /*
+    central block responsive code
+    */
     .text-image-block {
         flex-direction: column;
         align-items: center;
@@ -225,3 +228,4 @@ size of used technologies pictures
     border: 2px aqua solid;
     border-radius: 8px;
 }
+
