@@ -234,16 +234,14 @@ section {
 
 #get-in-touch-article {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;    
-    padding: 5px;
+    gap: 1.5rem;
+    padding: 1rem;
     border: 2px var(--my-border-color) solid;
 }
 
 .label-column {
     display: inline-block;
-    width: 10rem;
+    width: 7rem;
 }
 
 .mandatory-sign::after{
@@ -252,10 +250,42 @@ section {
     margin-left: 0.2rem;
 }
 
+/*
+    just content: "" is not enough cause it's impact on right side of the frame
+*/
 input:valid + .mandatory-sign::after {
-    content: "";
+    visibility: hidden;
 }
 
+/*
+    just content: "" is not enough cause it's impact on right side of the frame
+*/
 select:valid + .mandatory-sign::after {
-    content: "";
+    visibility: hidden;
+}
+
+.get-in-touch-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.get-in-touch-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1; 
+}
+
+#message-id {
+    width: 100%;
+    min-width: 15rem;
+    height: 10rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;    
+}
+
+#message-label-id {
+    display: block;
+    margin-bottom: 0.25rem;
 }
