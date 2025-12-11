@@ -251,3 +251,11 @@ section {
     color: red;
     margin-left: 0.2rem;
 }
+
+input:valid + .mandatory-sign::after {
+    content: "";
+}
+
+select:valid + .mandatory-sign::after {
+    content: "";
+}

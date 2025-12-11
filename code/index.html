@@ -74,8 +74,9 @@
                 <article id="get-in-touch-article">
 
                     <div>
-                        <label for="call-me-prefix-id" class="label-column mandatory-sign">We'll call you:</label>
+                        <label for="call-me-prefix-id" class="label-column">We'll call you:</label>
                         <select aria-label="select" id="call-me-prefix-id" required>
+                            <option value="" disabled selected>Select...</option>
                             <option value="Mr">Mr</option>
                             <option value="Miss">Miss</option>
                             <option value="Mrs">Mrs</option>
@@ -83,16 +84,19 @@
                             <option value="Sir">Sir</option>
                             <option value="Lady">Lady</option>
                         </select>
+                        <label class="mandatory-sign"></label>
                     </div>
 
                     <div>
-                        <label for="firstName" class="label-column mandatory-sign">First name:</label>
+                        <label for="firstName" class="label-column">First name:</label>
                         <input type="text" placeholder="First name" id="firstName" required minlength="3">
+                        <label class="mandatory-sign"></label>
                     </div>
 
                     <div>
-                        <label for="surname" class="label-column mandatory-sign">Surname:</label>
+                        <label for="surname" class="label-column ">Surname:</label>
                         <input type="text" placeholder="Surname" id="surname" required minlength="3">
+                        <label class="mandatory-sign"></label>
                     </div>
 
                     <div>
