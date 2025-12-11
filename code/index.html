@@ -34,8 +34,8 @@
                     accesskey="a">About</a>
             </div>
             <div>
-                <a href="Connect.html" target="_self" tabindex="5" class="growing-text" aria-keyshortcuts="Alt+Shift+c"
-                    accesskey="c">Connect</a>
+                <a href="#connect-to-me-section-id" target="_self" tabindex="5" class="growing-text"
+                    aria-keyshortcuts="Alt+Shift+c" accesskey="c">Connect</a>
             </div>
         </nav>
 
@@ -44,26 +44,66 @@
         </section>
 
         <main class="main-section" id="main-section-id">
-            <header>
-                <h1 class="h1-section">Short resume for the section</h1>
-            </header>
-            <article class="text-image-block">
-                <img id="man_avatar" class="side-image" src="../resources/pics/avatar.jpg" alt="man avatar">
-                <p class="text-content">
-                    Hi, usually I position myself as a BE developer. I deal with DBs (both <abbr
-                        title="Oracle/PostgreSQL/MySQL">SQL</abbr> and <abbr
-                        title="Mongo and Redis. A bit, but in use )">noSQL</abbr>) and work with microservice and
-                    monolithic architectures.
-                    <br><br>
-                    But today, you’re going to discover me as a UI fullstack engineer. Yeah, it will be a nightmare,
-                    especially because we haven’t learned JS yet, so all the tricks on that page are done
-                    purely with CSS and HTML.
-                    <br><br>
-                    Be patient—I'm going to improve my knowledge and create something that won’t fail every time on
-                    start. At least not at
-                    the beginning. )))
-                </p>
-            </article>
+            <section id="main-section-id">
+                <header>
+                    <h1 class="h1-header-design">Short resume for the section</h1>
+                </header>
+                <article class="text-image-block">
+                    <img id="man_avatar" class="side-image" src="../resources/pics/avatar.jpg" alt="man avatar">
+                    <p class="text-content">
+                        Hi, usually I position myself as a BE developer. I deal with DBs (both <abbr
+                            title="Oracle/PostgreSQL/MySQL">SQL</abbr> and <abbr
+                            title="Mongo and Redis. A bit, but in use )">noSQL</abbr>) and work with microservice and
+                        monolithic architectures.
+                        <br><br>
+                        But today, you’re going to discover me as a UI fullstack engineer. Yeah, it will be a nightmare,
+                        especially because we haven’t learned JS yet, so all the tricks on that page are done
+                        purely with CSS and HTML.
+                        <br><br>
+                        Be patient—I'm going to improve my knowledge and create something that won’t fail every time on
+                        start. At least not at
+                        the beginning. )))
+                    </p>
+                </article>
+            </section>
+
+            <section id="get-in-touch-section-id">
+                <header>
+                    <h1 class="h1-header-design">Get in touch</h1>
+                </header>
+                <article id="get-in-touch-article">
+
+                    <div>
+                        <label for="call-me-prefix-id" class="label-column mandatory-sign">We'll call you:</label>
+                        <select aria-label="select" id="call-me-prefix-id" required>
+                            <option value="Mr">Mr</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Sir">Sir</option>
+                            <option value="Lady">Lady</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="firstName" class="label-column mandatory-sign">First name:</label>
+                        <input type="text" placeholder="First name" id="firstName" required minlength="3">
+                    </div>
+
+                    <div>
+                        <label for="surname" class="label-column mandatory-sign">Surname:</label>
+                        <input type="text" placeholder="Surname" id="surname" required minlength="3">
+                    </div>
+
+                    <div>
+                        <label for="phone" class="label-column">Your phone:</label>
+                        <input type="tel" placeholder="Phone" id="phone"
+                            pattern="\+?(\([0-9]{1,3}\)|[0-9]{1,3})?[0-9\-\s]{6,12}">
+                    </div>
+
+
+                </article>
+            </section>
         </main>
 
         <footer class="footer-section centered">

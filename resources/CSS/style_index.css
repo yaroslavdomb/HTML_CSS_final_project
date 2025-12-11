@@ -82,9 +82,9 @@ relative to the current) -  so body tag is unreachable from our point of view.
     flex: 1;
 }
 
-.h1-section{
+.h1-header-design{
     padding: 10px;
-    margin: 10 px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -104,10 +104,7 @@ relative to the current) -  so body tag is unreachable from our point of view.
 .text-image-block {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    gap: 20px;    
     padding: 5px;
     border: 2px var(--my-border-color) solid;
 }
@@ -229,3 +226,28 @@ size of used technologies pictures
     border-radius: 8px;
 }
 
+section {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#get-in-touch-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;    
+    padding: 5px;
+    border: 2px var(--my-border-color) solid;
+}
+
+.label-column {
+    display: inline-block;
+    width: 10rem;
+}
+
+.mandatory-sign::after{
+    content: "*";
+    color: red;
+    margin-left: 0.2rem;
+}
