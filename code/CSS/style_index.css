@@ -320,3 +320,53 @@ select:valid + .mandatory-sign::after {
     color: var(--my-txt-color_2);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.65rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: var(--my-border-color) solid 2px;
+}
+
+.vertical-order{
+    display: flex;
+    flex-direction: column;
+}
+
+.download {
+    display: none;
+}
+
+.button-link {
+    padding: 0.2rem 0.25rem;
+    margin-left: 0.5rem;
+    background-color: var(--my-button-bg-color);
+    color: var(--my-txt-color_2);
+    text-decoration: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #f4e802;
+}
+
+#pdf:checked ~ .pdf {
+    display: inline-block;
+}
+
+#docx:checked ~ .docx {
+    display: inline-block;
+}
+
+#pdf:checked ~ #docx:checked ~ .download {
+    display: none;
+}

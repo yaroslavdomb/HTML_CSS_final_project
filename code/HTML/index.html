@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, Aria, noJS, AI for site construction">
     <meta name="description" content="Final project for HTML/CSS section of learning for full stack engeneering">
-    
+
     <title>Final project</title>
 
     <link rel="icon" href="../../resources/pics/icons8-school-80.png" type="image/png">
@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="../CSS/color-scheme-mode.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <script src="../JS/darkMode.js"></script>
 </head>
@@ -38,7 +40,7 @@
                     aria-keyshortcuts="Alt+Shift+s" accesskey="s">Sub-projects</a>
             </div>
             <div class="background-transformation">
-                <a href="About.html" target="_self" tabindex="4" class="growing-text" aria-keyshortcuts="Alt+Shift+a"
+                <a href="#about-id" target="_self" tabindex="4" class="growing-text" aria-keyshortcuts="Alt+Shift+a"
                     accesskey="a">About</a>
             </div>
             <div class="background-transformation">
@@ -79,8 +81,45 @@
                 <header>
                     <h1 class="h1-header-design another-font">Sub-projects</h1>
                 </header>
-                <article class="text-image-block">
+                <article class="text-image-block grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </article>
+            </section>
+
+            <section id="about-id">
+                <header>
+                    <h1 class="h1-header-design">About me</h1>
+                </header>
+                <article class="text-image-block vertical-order">
+                    <div class="upload-cv" role="form" aria-labelledby="upload-label">
+                        <label id="upload-label">Download my CV:</label>
                     
+                        <input type="radio" id="pdf" name="cv-format" checked>
+                        <label for="pdf">PDF</label>
+                    
+                        <input type="radio" id="docx" name="cv-format">
+                        <label for="docx">DOCX</label>
+                    
+                        <a href="cv/my-cv.pdf" class="download pdf button-link" download>Download as PDF</a>
+                        <a href="cv/my-cv.docx" class="download docx button-link" download>Download as DOCX</a>
+                    </div>
+<!-- 
+                    <details>
+                        <summary>See me on social networks...</summary>
+                        <p>
+                        <h4>facebook</h4>
+                        <h4>telegramm</h4>
+                        <h4>watsUp</h4>
+
+
+                        </p>
+                    </details> -->
+
                 </article>
             </section>
 
@@ -149,7 +188,8 @@
         </main>
 
         <footer class="centered">
-            <h1 class="h1-header-design red-blue-radial-gradient" id="tech-id">Technologies and resources been used </h1>
+            <h1 class="h1-header-design red-blue-radial-gradient" id="tech-id">Technologies and resources been used
+            </h1>
             <div class="resource-list">
                 <div class="resource">
                     <a href="https://www.istockphoto.com/illustrations/man-face-silhouette" target="_blank">
