@@ -370,3 +370,30 @@ select:valid + .mandatory-sign::after {
 #pdf:checked ~ #docx:checked ~ .download {
     display: none;
 }
+
+#details-id .socials {
+    display: flex;
+    gap:0.5rem;
+}
+
+/*
+need to override the width, cause default value is length of summary
+*/
+#details-id {
+    width: 100%;
+}
+
+#details-id.center .socials {
+    justify-content: center;
+    width: 100%;
+}
+
+.image-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+}
+
+.hide-help {
+    display: none;
+}
