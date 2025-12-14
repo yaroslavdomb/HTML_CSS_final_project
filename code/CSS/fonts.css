@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Donuts Chocolate';
-    src: url('../../resources/fonts/Donuts Chocolate.otf') format('opentype');
+    font-family: 'CaesarDressing';
+    src: url('../../resources/fonts/CaesarDressing-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,5 +25,5 @@ strong, b {
 }
 
 .another-font{
-    font-family: 'Donuts Chocolate', sans-serif;
+    font-family: 'CaesarDressing', sans-serif;
 }
