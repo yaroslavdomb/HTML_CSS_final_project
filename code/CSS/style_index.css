@@ -405,3 +405,27 @@ need to override the width, cause default value is length of summary
     white-space: nowrap;
     border: 0;
 }
+.tooltip-container {
+    position: relative;
+    display: inline;
+    cursor: help;
+}
+
+.tooltip-container .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    white-space: nowrap;
+    padding: 0.25rem 0.4rem;
+    border: 1px solid;
+    font-size: 0.9rem;
+    top: -1.6rem;
+    left: 0;
+    z-index: 10;
+    color: var(--my-txt-color);
+    background-color: var(--my-bg-color);
+}
+
+.tooltip-container:hover .tooltip-text,
+.tooltip-container:focus .tooltip-text {
+    visibility: visible;
+}
