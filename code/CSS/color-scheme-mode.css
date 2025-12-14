@@ -4,6 +4,7 @@
     --my-border-color: green;
     --my-img-color: black;
     --my-nav-menu-bg-color:#d3d3d3;
+    --my-txt-color_2: #86e9f0;
 } 
 
 #color-schema-checkbox:checked ~ *,
@@ -13,6 +14,7 @@
     --my-txt-color: black;
     --my-border-color: #453ada;
     --my-img-color: red;
+    --my-txt-color_2: #1c201f;
 }
 
 .color-scheme-mode {
