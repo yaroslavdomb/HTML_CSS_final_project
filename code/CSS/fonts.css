@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Donuts Chocolate';
+    src: url('../../resources/fonts/Donuts Chocolate.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+.another-font{
+    font-family: 'Donuts Chocolate', sans-serif;
+}
