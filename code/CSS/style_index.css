@@ -13,7 +13,7 @@ relative to the current) -  so body tag is unreachable from our point of view.
 #color-schema-checkbox {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 1rem;    
 }
 
 #color-schema-label {    
@@ -86,6 +86,11 @@ relative to the current) -  so body tag is unreachable from our point of view.
     padding: 10px;
     margin: 10px;
     text-align: center;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-color: blueviolet;
+    border-style: double;
+    margin-top: 2.5rem;
 }
 
 .man_avatar {
