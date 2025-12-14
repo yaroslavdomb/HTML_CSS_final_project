@@ -394,6 +394,14 @@ need to override the width, cause default value is length of summary
     margin: 0.5rem;
 }
 
-.hide-help {
-    display: none;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
