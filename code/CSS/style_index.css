@@ -10,13 +10,13 @@ and then all siblings under it can fill switch between light and dark theme.
 All this done due to limitation of pure HTML/CSS (we can't reach parent nodes
 relative to the current) -  so body tag is unreachable from our point of view. 
 */
-#color-schema-checkbox {
+#color-schema-checkbox-id {
     position: absolute;
     top: 1rem;
     right: 1rem;    
 }
 
-#color-schema-label {    
+#color-schema-label-id {    
     position: absolute;
     top: 1rem;
     right: 2rem;
