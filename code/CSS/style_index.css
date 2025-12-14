@@ -68,6 +68,15 @@ relative to the current) -  so body tag is unreachable from our point of view.
       border-right: solid 2px var(--my-border-color, #453ada);
 }
 
+.background-transformation {
+    background-color: var(--my-bg-color);
+    transition: background-color 1.2s ease;
+}
+
+.background-transformation:hover {
+    background-color: var(--my-nav-menu-bg-color);
+}
+
 .growing-text {
     display: inline-block;
     font-size: medium;

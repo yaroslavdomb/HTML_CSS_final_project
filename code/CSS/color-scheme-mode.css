@@ -3,10 +3,12 @@
     --my-txt-color: green;
     --my-border-color: green;
     --my-img-color: black;
+    --my-nav-menu-bg-color:#d3d3d3;
 } 
 
 #color-schema-checkbox:checked ~ *,
 #color-schema-checkbox:checked ~ * * {
+    --my-nav-menu-bg-color: yellow;
     --my-bg-color: white;
     --my-txt-color: black;
     --my-border-color: #453ada;
