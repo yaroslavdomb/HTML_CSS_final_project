@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedState = localStorage.getItem('colorSchema');
     if (savedState === 'true') {
         checkbox.checked = true;
-        label.textContent = 'Dark mode on';
+        label.textContent = 'Light mode: on';
     } else {
         checkbox.checked = false;
-        label.textContent = 'Dark mode off';
+        label.textContent = 'Light mode: off';
     }
 
     checkbox.addEventListener('change', () => {
         localStorage.setItem('colorSchema', checkbox.checked);
-        label.textContent = checkbox.checked ? 'Dark mode on' : 'Dark mode off';
+        label.textContent = checkbox.checked ? 'Light mode: on' : 'Light mode: off';
     });
 });
