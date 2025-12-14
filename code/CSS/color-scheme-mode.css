@@ -8,8 +8,8 @@
     --my-button-bg-color:#c1bdf7;
 } 
 
-#color-schema-checkbox:checked ~ *,
-#color-schema-checkbox:checked ~ * * {
+#color-schema-checkbox-id:checked ~ *,
+#color-schema-checkbox-id:checked ~ * * {
     --my-nav-menu-bg-color: yellow;
     --my-bg-color: white;
     --my-txt-color: black;
@@ -46,10 +46,10 @@ to make logo visible on light mode we need to invert colors
     filter: invert(1);
 }
 
-#color-schema-checkbox:checked ~ * .mono-white-logo {
+#color-schema-checkbox-id:checked ~ * .mono-white-logo {
     filter: invert(1);
 }
 
-#color-schema-checkbox:checked ~ * .mono-black-logo {
+#color-schema-checkbox-id:checked ~ * .mono-black-logo {
     filter: invert(0);
 }
