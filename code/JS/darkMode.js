@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const checkbox = document.getElementById('color-schema-checkbox');
-    const label = document.getElementById('color-schema-label');
+    const checkbox = document.getElementById('color-schema-checkbox-id');
+    const label = document.getElementById('color-schema-label-id');
 
     const savedState = localStorage.getItem('colorSchema');
     if (savedState === 'true') {
