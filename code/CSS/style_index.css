@@ -308,6 +308,7 @@ select:valid + .mandatory-sign::after {
 .input-data{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .submit {
