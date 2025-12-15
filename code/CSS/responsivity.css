@@ -1,0 +1,9 @@
+:root{
+    --my-margin-top-medium-scr: 0rem;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --my-margin-top-medium-scr: 0.7rem;
+    }
+}

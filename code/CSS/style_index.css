@@ -272,6 +272,11 @@ select:valid + .mandatory-sign::after {
     margin-right: 1rem;
 }
 
+.get-in-touch-right-side {
+    flex: 1;
+    margin-top: var(--my-margin-top-medium-scr);
+}
+
 #message-id {
     width: 100%;
     min-width: 15rem;
