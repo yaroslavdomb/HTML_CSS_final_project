@@ -1,4 +1,4 @@
-ReadMe - V1.0
+ReadMe - V1.1
 Date: 15/DEC/2025
 
 Project purpose:
@@ -22,8 +22,9 @@ Files & Folders structure:
         music
         pics = collection of pictures to be used in project
         video
-    ReadMe.txt = currently you are reading this file
-
+    Docs
+        ReadMe.txt = currently you are reading this file
+        CSS_HTML_expected = a very common description of what is expected from graduates of the course
 
 Rules used for site creation:
     1) Any id should be named as "<id-name-here>-id"
