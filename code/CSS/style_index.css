@@ -11,13 +11,13 @@ All this done due to limitation of pure HTML/CSS (we can't reach parent nodes
 relative to the current) -  so body tag is unreachable from our point of view. 
 */
 #color-schema-checkbox-id {
-    position: absolute;
-    top: 1rem;
+    position: fixed;
+    top: 1.2rem;
     right: 1rem;    
 }
 
 #color-schema-label-id {    
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 2rem;
     font-size: medium;
