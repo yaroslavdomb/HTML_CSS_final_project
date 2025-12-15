@@ -2,8 +2,69 @@
     --my-margin-top-medium-scr: 0rem;
 }
 
+/* Text message */
 @media (max-width: 1000px) {
     :root {
         --my-margin-top-medium-scr: 0.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+    /* Navigation menu */
+    .menu-on-narrow-screen + label {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.5em 1em;
+        cursor: pointer;        
+        z-index: 10;
+    }
+
+    .main-navigation {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 2.5em;
+        left: 0;
+        width: 135px;
+        z-index: 5;
+    }
+
+    .menu-on-narrow-screen:checked + label + .main-navigation {
+        display: flex;
+    }
+
+    .main-navigation > div {
+        width: 100%;        
+    }
+
+    .main-navigation > div a {
+        display: block;
+        text-align: left;
+        padding: 1em 1em 1em 2em;
+    }
+
+    .main-navigation div,
+    .main-navigation div:last-child {
+        border: none;
+    }
+
+    /* Central block responsive code */
+    .text-image-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .side-image {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .text-content {
+        text-align: left;
+        width: 100%;
     }
 }
