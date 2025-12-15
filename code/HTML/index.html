@@ -20,7 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <script src="../JS/darkMode.js"></script>
+    <script src="../JS/darkMode.js" defer></script>
 </head>
 
 <body>
@@ -32,22 +32,22 @@
         <input type="checkbox" id="menu-on-narrow-screen-id" class="menu-on-narrow-screen" />
         <label for="menu-on-narrow-screen-id">☰ Menu</label>
 
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="Main navigation menu">
             <ul>
                 <li class="background-transformation">
-                    <a href="#main-section-id" target="_self" class="growing-text" aria-keyshortcuts="Alt+Shift+m"
+                    <a href="#main-section-id" class="growing-text" aria-keyshortcuts="Alt+Shift+m"
                         accesskey="m">Main</a>
                 </li>
                 <li class="background-transformation">
-                    <a href="#subproject-id" target="_self" class="growing-text" aria-keyshortcuts="Alt+Shift+s"
+                    <a href="#subproject-id" class="growing-text" aria-keyshortcuts="Alt+Shift+s"
                         accesskey="s">Sub-projects</a>
                 </li>
                 <li class="background-transformation">
-                    <a href="#about-id" target="_self" class="growing-text" aria-keyshortcuts="Alt+Shift+a"
+                    <a href="#about-id" class="growing-text" aria-keyshortcuts="Alt+Shift+a"
                         accesskey="a">About</a>
                 </li>
                 <li class="background-transformation">
-                    <a href="#get-in-touch-section-id" target="_self" class="growing-text"
+                    <a href="#get-in-touch-section-id" class="growing-text"
                         aria-keyshortcuts="Alt+Shift+c" accesskey="c">Get in touch</a>
                 </li>
             </ul>
@@ -159,26 +159,26 @@
 
                             <div>
                                 <label for="firstName-id" class="label-column">First name:</label>
-                                <input type="text" placeholder="First name" id="firstName-id" required autocomplete
+                                <input type="text" placeholder="First name" id="firstName-id" required autocomplete="username"
                                     minlength="3">
                                 <label class="mandatory-sign"></label>
                             </div>
 
                             <div>
                                 <label for="surname-id" class="label-column ">Surname:</label>
-                                <input type="text" placeholder="Surname" id="surname-id" required autocomplete
+                                <input type="text" placeholder="Surname" id="surname-id" required autocomplete="family-name"
                                     minlength="3">
                                 <label class="mandatory-sign"></label>
                             </div>
 
                             <div>
                                 <label for="company-id" class="label-column">Company:</label>
-                                <input type="text" placeholder="Company name" id="company-id" autocomplete>
+                                <input type="text" placeholder="Company name" id="company-id">
                             </div>
 
                             <div>
                                 <label for="phone-id" class="label-column">Your phone:</label>
-                                <input type="tel" placeholder="Phone" id="phone-id" autocomplete
+                                <input type="tel" placeholder="Phone" id="phone-id" autocomplete="tel-country-code"
                                     pattern="\+?(\([0-9]{1,3}\)|[0-9]{1,3})?[0-9\-\s]{6,12}"
                                     aria-describedby="phone-help-id">
                                 <p id="phone-help-id" class="sr-only">Provide your phone number as +(optional) then 1
@@ -189,7 +189,7 @@
 
                             <div>
                                 <label for="phone" class="label-column">Your email:</label>
-                                <input type="email" placeholder="Email" id="email-id" autocomplete
+                                <input type="email" placeholder="Email" id="email-id" autocomplete="email"
                                     pattern="[a-zA-Z0-9_-+%]{2,}@[a-zA-Z0-9_-+%]{2,}\.[a-zA-Z0-9_-%+\.]*[a-zA-Z0-9_-%+]{2,}"
                                     aria-describedby="email-help-id">
                                 <p id="email-help-id" class="sr-only">Provide your email in form user@example.com</p>
