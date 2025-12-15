@@ -37,13 +37,6 @@ relative to the current) -  so body tag is unreachable from our point of view.
     flex-direction: column;
 }
 
-.main-navigation,
-.input-data {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .menu-on-narrow-screen + label {
     display: none;
 }
@@ -51,23 +44,32 @@ relative to the current) -  so body tag is unreachable from our point of view.
 .menu-on-narrow-screen {    
     display: none;
     position: absolute;
-    top: 0;
+    top: 0rem;
     left: 0;
     padding: 0.5em 1em;
     cursor: pointer;
 }
 
-.main-navigation div {
-    border-left: solid 2px var(--my-border-color, #453ada);
-    border-bottom: solid 2px var(--my-border-color, #453ada); 
-    border-top: solid 2px var(--my-border-color, #453ada);
-    padding:1%;    
+.main-navigation ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.main-navigation li {
+    list-style-type: none;
+    border-left: solid 2px var(--my-border-color);
+    border-bottom: solid 2px var(--my-border-color); 
+    border-top: solid 2px var(--my-border-color);
+    padding: 0.75rem;    
     text-align: center;
     justify-content: center;
 }
 
-.main-navigation div:last-child {
-      border-right: solid 2px var(--my-border-color, #453ada);
+.main-navigation li:last-child {
+    border-right: solid 2px var(--my-border-color);
 }
 
 .background-transformation {
@@ -86,7 +88,7 @@ relative to the current) -  so body tag is unreachable from our point of view.
 }
 
 .growing-text:hover {
-    transform:  scale(1.3);
+    transform:  scale(1.2);
 }
 
 .main-section {
@@ -186,6 +188,12 @@ section {
     gap: 1.5rem;
     padding: 1rem;
     border: 2px var(--my-border-color) solid;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .label-column {

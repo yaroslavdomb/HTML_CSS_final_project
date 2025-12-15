@@ -36,18 +36,18 @@
         display: flex;
     }
 
-    .main-navigation > div {
+    .main-navigation > ul > li {
         width: 100%;        
     }
 
-    .main-navigation > div a {
+    .main-navigation li a {
         display: block;
         text-align: left;
-        padding: 1em 1em 1em 2em;
+        padding: 0.2rem 0.2rem 0.2rem 0.4rem;
     }
 
-    .main-navigation div,
-    .main-navigation div:last-child {
+    .main-navigation li,
+    .main-navigation li:last-child {
         border: none;
     }
 
