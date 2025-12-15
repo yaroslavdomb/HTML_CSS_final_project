@@ -13,7 +13,7 @@ relative to the current) -  so body tag is unreachable from our point of view.
 #color-schema-checkbox-id {
     position: fixed;
     top: 1.2rem;
-    right: 1rem;    
+    right: 0.7rem;    
 }
 
 #color-schema-label-id {    
@@ -22,11 +22,11 @@ relative to the current) -  so body tag is unreachable from our point of view.
     right: 2rem;
     font-size: medium;
     margin-right: 1rem;
-    transition: transform 1s ease;
+    transition: transform 0.7s ease;
 }
 
 #color-schema-label:hover {    
-    transform: translateX(-1rem) scale(1.3);    
+    transform: translateX(-1rem) scale(1.2);    
 }
 
 .full-site-design {
