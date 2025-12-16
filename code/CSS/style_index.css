@@ -404,17 +404,19 @@ but without displaying it on the screen*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%;    
     aspect-ratio: 1/1;
-}
-
-.expandable img {    
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     transition: transform 1.5s ease;
 }
 
-.expandable:hover img {
+.expandable img {    
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.expandable:hover {
     transform: scale(2.5);
+    opacity: 0.7;
 }
