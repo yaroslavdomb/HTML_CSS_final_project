@@ -196,6 +196,12 @@ section {
     flex-wrap: wrap;
 }
 
+input::placeholder {
+    font-style: italic;
+    color: var(--my-placeholder-txt-clr);
+    opacity: 0.6;
+}
+
 .label-column {
     display: inline-block;
     width: 6rem;

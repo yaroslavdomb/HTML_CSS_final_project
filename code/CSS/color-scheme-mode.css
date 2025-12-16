@@ -5,6 +5,7 @@
     --my-nav-menu-bg-color:#d3d3d3;
     --my-txt-color_2: #86e9f0;
     --my-button-bg-color:#c1bdf7;
+    --my-placeholder-txt-clr: #4b02f3;
 } 
 
 #color-schema-checkbox-id:checked ~ *,
@@ -15,6 +16,7 @@
     --my-border-color: #453ada;
     --my-txt-color_2: #1c201f;
     --my-button-bg-color:#c1bdf7;
+    --my-placeholder-txt-clr: rgb(44, 109, 9);
 }
 
 .color-scheme-mode {
