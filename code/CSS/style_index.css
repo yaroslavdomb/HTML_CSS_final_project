@@ -384,3 +384,37 @@ but without displaying it on the screen*/
 .tooltip-container:focus .tooltip-text {
     visibility: visible;
 }
+
+/*subproject section*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.65rem;
+    list-style: none;
+    padding: 0.7rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.expandable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.expandable img {    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease;
+}
+
+.expandable:hover img {
+    transform: scale(2.5);
+}
