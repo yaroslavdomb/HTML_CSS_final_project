@@ -61,7 +61,6 @@ ul {
     margin: 0;
 }
 
-
 .main-navigation li {
     list-style-type: none;
     border-left: solid 2px var(--my-border-color);
@@ -183,6 +182,12 @@ section {
     margin-right: 25%;
 }
 
+h1 {
+    margin-top: var(--my-margin-top-h1);
+    text-align: center;
+    font-size: 5rem;
+}
+
 #get-in-touch-form {
     display: flex;
     flex-direction: column;
@@ -231,7 +236,7 @@ select:valid + .mandatory-sign::after {
 
 .get-in-touch-right-side {
     flex: 1;
-    margin-top: var(--my-margin-top-medium-scr);
+    margin-top: var(--my-margin-top-right-side);
 }
 
 #message-id {
