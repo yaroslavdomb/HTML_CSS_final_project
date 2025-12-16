@@ -1,5 +1,5 @@
-ReadMe - V1.1
-Date: 15/DEC/2025
+ReadMe - V1.2
+Date: 16/DEC/2025
 
 Project purpose:
     Final project for HTML+CSS section of learning in HackerU for "Full stack engineer".
@@ -69,5 +69,7 @@ List of customized variables
         --my-nav-menu-bg-color = background color for navigation elements on hover
         --my-txt-color_2 = text color for footer header for dark/light mode
         --my-button-bg-color = background color for file "download" button on hover
+        --my-placeholder-txt-clr = placeholder color
     Responsivity:
-        --my-margin-top-medium-scr = top margin for screens <1000px for the message field
+        --my-margin-top-right-side = top margin for screens <1000px for the message field
+        --my-margin-top-h1 = = top margin for screens <1000px for the h1
