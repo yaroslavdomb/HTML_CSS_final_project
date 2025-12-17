@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML, CSS, Aria, noJS, AI for site construction">
     <meta name="description" content="Final project for HTML/CSS section of learning for full stack engeneering">
 
-    <title>Final project-Sub-projects</title>
+    <title>Final project-Connect</title>
 
     <link rel="icon" href="../../resources/pics/icons8-school-80.png" type="image/png">
     <link rel="stylesheet" href="../CSS/fonts.css">
@@ -49,55 +49,107 @@
                         accesskey="a">About</a>
                 </li>
                 <li>
-                    <a href="Contact.html" class="growing-text" aria-keyshortcuts="Alt+Shift+c" target="_blank" accesskey="c">Contact</a>
+                    <a href="Contact.html" class="growing-text" aria-keyshortcuts="Alt+Shift+c" target="_blank"
+                        accesskey="c">Contact</a>
                 </li>
             </ul>
         </nav>
 
-        <section id="subproject-id">
-            <header>
-                <h2 class="h2-header-design another-font">Sub-projects</h2>
-            </header>
-            <article class="border">
-                <ul class="grid-container">
-                    <li class="grid-item expandable border">
-                        <a href="#">
-                            <img src="../../resources/pics/avatar.jpg" alt="First sub-project">
-                        </a>
-                    </li>
+        <h1>Connect</h1>
+        <main class="main-section" id="main-section-id">
+            <details id="details-id" class="center">
+                <summary>Find me on social media...</summary>
+                <div class="socials">
+                    <a href="https://www.facebook.com/yaroslav.domb" target="_blank" rel="noopener noreferrer">
+                        <img src="../../resources/pics/Facebook.png" class="image-box" alt="Visit my Facebook profile">
+                    </a>
+                    <a href="https://t.me/YaroslavDomb" target="_blank" rel="noopener noreferrer">
+                        <img src="../../resources/pics/Telegram_logo.svg.webp" class="image-box"
+                            alt="Visit my Telegram profile">
+                    </a>
+                    <a href="https://wa.me/972546204755" target="_blank" rel="noopener noreferrer">
+                        <img src="../../resources/pics/WhatsApp.png" class="image-box" alt="Connect via WhatsUp">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yaroslav-domb-8899a778" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../../resources/pics/LinkedIn.png" class="image-box" alt="Visit my page on LinkedIn">
+                    </a>
+                </div>
+            </details>
 
-                    <li class="grid-item expandable border">
-                        <a href="#">
-                            <img src="../../resources/pics/avatar.jpg" alt=" Second sub-project">
-                        </a>
-                    </li>
+            <section id="get-in-touch-section-id">
+                <header>
+                    <h2 class="h2-header-design">Get in touch</h2>
+                </header>
+                <form id="get-in-touch-form" action="#" method="post"
+                    onsubmit="alert('Form processing not implemented yet'); return false;">
+                    <div class="input-data">
+                        <div class="get-in-touch-left-side">
+                            <div>
+                                <label for="salutation-id" class="label-column">Salutation:</label>
+                                <select aria-label="salutation label" id="salutation-id" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Dr">Dr</option>
+                                    <option value="Sir">Sir</option>
+                                    <option value="Lady">Lady</option>
+                                </select>
+                                <label class="mandatory-sign"></label>
+                            </div>
 
-                    <li class="grid-item expandable border">
-                        <a href="#">
-                            <img src="../../resources/pics/avatar.jpg" alt="Third sub-project">
-                        </a>
-                    </li>
+                            <div>
+                                <label for="firstName-id" class="label-column">First name:</label>
+                                <input type="text" placeholder="First name" id="firstName-id" required
+                                    autocomplete="username" minlength="3">
+                                <label class="mandatory-sign"></label>
+                            </div>
 
-                    <li class="grid-item expandable border">
-                        <a href="#">
-                            <img src="../../resources/pics/avatar.jpg" alt="Forth sub-project">
-                        </a>
-                    </li>
+                            <div>
+                                <label for="surname-id" class="label-column ">Surname:</label>
+                                <input type="text" placeholder="Surname" id="surname-id" required
+                                    autocomplete="family-name" minlength="3">
+                                <label class="mandatory-sign"></label>
+                            </div>
 
-                    <li class="grid-item expandable border">
-                        <a href="#">
-                            <img src="../../resources/pics/avatar.jpg" alt="Fifth sub-project">
-                        </a>
-                    </li>
+                            <div>
+                                <label for="company-id" class="label-column">Company:</label>
+                                <input type="text" placeholder="Company name" id="company-id">
+                            </div>
 
-                    <li class="grid-item expandable border">
-                        <a href="#">
-                            <img src="../../resources/pics/avatar.jpg" alt="Sixth sub-project">
-                        </a>
-                    </li>
-                </ul>
-            </article>
-        </section>
+                            <div>
+                                <label for="phone-id" class="label-column">Your phone:</label>
+                                <input type="tel" placeholder="Phone" id="phone-id" autocomplete="tel-country-code"
+                                    pattern="\+?(\([0-9]{1,3}\)|[0-9]{1,3})?[0-9\-\s]{6,}"
+                                    aria-describedby="phone-help-id">
+                                <p id="phone-help-id" class="sr-only">Provide your phone number as +(optional) then 1
+                                    up to 3 digits and then 6 up to 12 digits. In the last block you can use any space
+                                    symbols you want</p>
+                            </div>
+                            <div>
+                                <label for="email-id" class="label-column">Your email:</label>
+                                <input type="email" placeholder="Email" id="email-id" autocomplete="email"
+                                    pattern="[a-zA-Z0-9_-+%.]{2,}@[a-zA-Z0-9_-+%]{2,}\.[a-zA-Z0-9_-%+.]*[a-zA-Z0-9_-%+]{2,}"
+                                    aria-describedby="email-help-id">
+                                <p id="email-help-id" class="sr-only">Provide your email in form user@example.com</p>
+                            </div>
+                        </div>
+                        <div class="get-in-touch-right-side">
+                            <div>
+                                <label for="message-id" id="message-label-id">Compose message:</label>
+                                <textarea placeholder="Write here" id="message-id" lang="en"
+                                    spellcheck="true"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="reset">Clear fields</button>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </main>
 
         <footer class="centered">
             <h2 class="h2-header-design red-blue-radial-gradient" id="tech-id">Technologies and resources been used
