@@ -13,7 +13,7 @@
 #color-schema-checkbox-id:checked ~ * * {   
     --my-bg-color: white;
     --my-txt-color: black;
-    --my-txt-color-2:white;
+    --my-txt-color-2:black;
     --my-txt-color-3: #0fecec;    
     --my-border-color: #453ada;
     --my-nav-menu-bg-color: yellow;
