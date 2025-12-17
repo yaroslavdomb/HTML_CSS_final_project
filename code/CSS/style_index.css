@@ -29,6 +29,10 @@ relative to the current) -  so body tag is unreachable from our point of view.
     transform: translateX(-1rem) scale(1.2);    
 }
 
+.no-list-style {
+    list-style-type: none;
+}
+
 .full-site-design {
     margin: 0;
     padding: 0;
@@ -147,6 +151,7 @@ ul {
 .resource-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
