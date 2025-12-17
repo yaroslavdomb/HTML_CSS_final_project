@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yaroslav Domb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Aria, noJS, AI for site construction">
+    <meta name="description" content="Final project for HTML/CSS section of learning for full stack engeneering">
+
+    <title>Final project</title>
+
+    <link rel="icon" href="../../resources/pics/icons8-school-80.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/style_index.css">
+    <link rel="stylesheet" href="../CSS/color-scheme-mode.css">
+    <link rel="stylesheet" href="../CSS/responsivity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="../JS/darkMode.js" defer></script>
+</head>
+
+<body>
+    <input type="checkbox" id="color-schema-checkbox-id" aria-label="Toggle dark mode">
+    <label for="color-schema-checkbox-id" class="growing-text" id="color-schema-label-id">Light mode:
+        off</label>
+
+    <div class="color-scheme-mode full-site-design">
+        <input type="checkbox" id="menu-on-narrow-screen-id" class="menu-on-narrow-screen"
+            aria-label="Toggle navigation menu" />
+        <label for="menu-on-narrow-screen-id" aria-label="Open menu">☰ Menu</label>
+    
+        <nav class="main-navigation" aria-label="Main navigation menu">
+            <ul>
+                <li class="background-transformation">
+                    <a href="#main-section-id" class="growing-text" aria-keyshortcuts="Alt+Shift+m" accesskey="m">Main</a>
+                </li>
+                <li class="background-transformation">
+                    <a href="#subproject-id" class="growing-text" aria-keyshortcuts="Alt+Shift+s"
+                        accesskey="s">Sub-projects</a>
+                </li>
+                <li class="background-transformation">
+                    <a href="#about-id" class="growing-text" aria-keyshortcuts="Alt+Shift+a" accesskey="a">About</a>
+                </li>
+                <li class="background-transformation">
+                    <a href="#get-in-touch-section-id" class="growing-text" aria-keyshortcuts="Alt+Shift+c"
+                        accesskey="c">Get in touch</a>
+                </li>
+            </ul>
+        </nav>
+        <details id="details-id" class="center">
+            <summary>Find me on social media...</summary>
+            <div class="socials">
+                <a href="https://www.facebook.com/yaroslav.domb" target="_blank" rel="noopener noreferrer">
+                    <img src="../../resources/pics/Facebook.png" class="image-box" alt="Visit my Facebook profile">
+                </a>
+                <a href="https://t.me/YaroslavDomb" target="_blank" rel="noopener noreferrer">
+                    <img src="../../resources/pics/Telegram_logo.svg.webp" class="image-box" alt="Visit my Telegram profile">
+                </a>
+                <a href="https://wa.me/972546204755" target="_blank" rel="noopener noreferrer">
+                    <img src="../../resources/pics/WhatsApp.png" class="image-box" alt="Connect via WhatsUp">
+                </a>
+                <a href="https://www.linkedin.com/in/yaroslav-domb-8899a778" target="_blank" rel="noopener noreferrer">
+                    <img src="../../resources/pics/LinkedIn.png" class="image-box" alt="Visit my page on LinkedIn">
+                </a>
+            </div>
+        </details>
+
+        <section id="get-in-touch-section-id">
+            <header>
+                <h2 class="h2-header-design">Get in touch</h2>
+            </header>
+            <form id="get-in-touch-form" action="#" method="post"
+                onsubmit="alert('Form processing not implemented yet'); return false;">
+                <div class="input-data">
+                    <div class="get-in-touch-left-side">
+                        <div>
+                            <label for="salutation-id" class="label-column">Salutation:</label>
+                            <select aria-label="salutation label" id="salutation-id" required>
+                                <option value="" disabled selected>Select...</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Dr">Dr</option>
+                                <option value="Sir">Sir</option>
+                                <option value="Lady">Lady</option>
+                            </select>
+                            <label class="mandatory-sign"></label>
+                        </div>
+        
+                        <div>
+                            <label for="firstName-id" class="label-column">First name:</label>
+                            <input type="text" placeholder="First name" id="firstName-id" required autocomplete="username"
+                                minlength="3">
+                            <label class="mandatory-sign"></label>
+                        </div>
+        
+                        <div>
+                            <label for="surname-id" class="label-column ">Surname:</label>
+                            <input type="text" placeholder="Surname" id="surname-id" required autocomplete="family-name"
+                                minlength="3">
+                            <label class="mandatory-sign"></label>
+                        </div>
+        
+                        <div>
+                            <label for="company-id" class="label-column">Company:</label>
+                            <input type="text" placeholder="Company name" id="company-id">
+                        </div>
+        
+                        <div>
+                            <label for="phone-id" class="label-column">Your phone:</label>
+                            <input type="tel" placeholder="Phone" id="phone-id" autocomplete="tel-country-code"
+                                pattern="\+?(\([0-9]{1,3}\)|[0-9]{1,3})?[0-9\-\s]{6,}" aria-describedby="phone-help-id">
+                            <p id="phone-help-id" class="sr-only">Provide your phone number as +(optional) then 1
+                                up to 3 digits and then 6 up to 12 digits. In the last block you can use any space
+                                symbols you want</p>
+                        </div>        
+                        <div>
+                            <label for="email-id" class="label-column">Your email:</label>
+                            <input type="email" placeholder="Email" id="email-id" autocomplete="email"
+                                pattern="[a-zA-Z0-9_-+%.]{2,}@[a-zA-Z0-9_-+%]{2,}\.[a-zA-Z0-9_-%+.]*[a-zA-Z0-9_-%+]{2,}"
+                                aria-describedby="email-help-id">
+                            <p id="email-help-id" class="sr-only">Provide your email in form user@example.com</p>
+                        </div>
+                    </div>
+                    <div class="get-in-touch-right-side">
+                        <div>
+                            <label for="message-id" id="message-label-id">Compose message:</label>
+                            <textarea placeholder="Write here" id="message-id" lang="en" spellcheck="true"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="reset">Clear fields</button>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+        <footer class="centered">
+            <h2 class="h2-header-design red-blue-radial-gradient" id="tech-id">Technologies and resources been used
+            </h2>
+            <ul class="resource-list">
+                <li class="resource no-list-style">
+                    <a href="https://www.istockphoto.com/illustrations/man-face-silhouette" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../../resources/pics/IStockLogo.svg" class="mono-white-logo my-image"
+                            alt="IStock illustrations and photos">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://icons8.com" rel="noopener noreferrer">
+                        <img src="../../resources/pics/logo-icons8.svg" class="my-image"
+                            alt="Icons8 icons and design resources">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://commons.wikimedia.org/wiki/Main_Page" rel="noopener noreferrer">
+                        <img src="../../resources/pics/Wikimedia.webp" class="my-image" alt="Wikimedia official site">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://openai.com/" rel="noopener noreferrer">
+                        <img src="../../resources/pics/chatGPT_logo.png" class="mono-black-logo my-image"
+                            alt="OpenAI official site">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://claude.ai/" rel="noopener noreferrer">
+                        <img src="../../resources/pics/Claude.png" class="my-image" alt="Claude official site">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/">
+                        <img src="../../resources/pics/html5-icon-1.jpg" class="my-image" alt="W3C World Wide Web Consortium">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noopener noreferrer">
+                        <img src="../../resources/pics/CSS-3_logo_3.png" class="my-image" alt="MDN CSS documentation">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://git-scm.com/" rel="noopener noreferrer">
+                        <img src="../../resources/pics/Git.png" class="my-image" alt="Git official site">
+                    </a>
+                </li>
+            </ul>
+        
+            <hr class="divider">
+        
+            <nav aria-label="Footer navigation">
+                <ul class="bottom-menu">
+                    <li>
+                        <a href="#main-section-id">Main</a>
+                    </li>
+                    <li>
+                        <a href="#subproject-id">Sub-projects</a>
+                    </li>
+                    <li>
+                        <a href="#about-id">About</a>
+                    </li>
+                    <li>
+                        <a href="#get-in-touch-section-id">Get in touch</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr class="divider">
+            <div>All rights reserved 2025</div>
+        </footer>
+</body>
+</html>
