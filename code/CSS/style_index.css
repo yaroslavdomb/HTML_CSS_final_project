@@ -438,3 +438,10 @@ but without displaying it on the screen*/
     justify-content: center;
     gap: var(--my-gap-bottom-menu);
 }
+
+.divider {
+    border: none;
+    height: 0.2rem;
+    background: radial-gradient(circle, rgb(255, 127, 127), rgb(107, 107, 252));
+    margin: 0.75rem 0;
+}
