@@ -74,3 +74,5 @@ List of customized variables
         --my-margin-top-right-side = top margin for the message field
         --my-margin-top-h1 = top margin for the h1
         --my-gap-bottom-menu = gap between elements in bottom menu
+        --my-image-width = image width 
+        --my-image-height = image height
