@@ -6,6 +6,7 @@
     --my-txt-color_2: #86e9f0;
     --my-button-bg-color:#c1bdf7;
     --my-placeholder-txt-clr: #4b02f3;
+    --my-txt-color-2:white;
 } 
 
 #color-schema-checkbox-id:checked ~ *,
@@ -17,6 +18,7 @@
     --my-txt-color_2: #1c201f;
     --my-button-bg-color:#c1bdf7;
     --my-placeholder-txt-clr: rgb(44, 109, 9);
+    --my-txt-color-2:black;
 }
 
 .color-scheme-mode {

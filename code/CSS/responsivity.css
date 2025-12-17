@@ -4,6 +4,9 @@
     --my-gap-bottom-menu: 5rem;
     --my-image-width:5rem;
     --my-image-height:5rem;
+    --my-go-home-text-gap: 9%;
+    --my-font-size:1rem;
+
 }
 
 @media (max-width: 1000px) {
@@ -13,6 +16,8 @@
         --my-gap-bottom-menu: 2rem;
         --my-image-width:3rem;
         --my-image-height:3rem;
+        --my-go-home-text-gap: 5%;
+        --my-font-size:0.75rem;
     }
 }
 

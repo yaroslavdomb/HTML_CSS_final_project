@@ -70,9 +70,15 @@ List of customized variables
         --my-txt-color_2 = text color for footer header for dark/light mode
         --my-button-bg-color = background color for file "download" button on hover
         --my-placeholder-txt-clr = placeholder color
+        --my-txt-color-2 = additional text color
     Responsivity:
         --my-margin-top-right-side = top margin for the message field
         --my-margin-top-h1 = top margin for the h1
         --my-gap-bottom-menu = gap between elements in bottom menu
-        --my-image-width = image width 
-        --my-image-height = image height
+        --my-image-width = resource and go home image width 
+        --my-image-height = resource and go home image height
+        --my-font-size = font size for go home tooltip
+
+Pictures resources:
+
+1) woman jumper = pole vault clipart #4009885 (License. Personal Use) (https://clipart-library.com/clipart/pole-vault-clipart_10.html)
