@@ -437,6 +437,7 @@ but without displaying it on the screen*/
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--my-gap-bottom-menu);
+    list-style-type: none;
 }
 
 .divider {
