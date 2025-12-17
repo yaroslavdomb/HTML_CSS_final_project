@@ -256,8 +256,10 @@ select:valid + .mandatory-sign::after {
 }
 
 /* Submit button position */
-.submit {
+.buttons {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     justify-content: flex-end;
 }
 
