@@ -13,7 +13,6 @@
 #color-schema-checkbox-id:checked ~ * * {   
     --my-bg-color: white;
     --my-bg-img: url("../../resources/pics/ai-generated-8321771_1920.png");
-
     --my-bg-img-opacity:0.5;
     --my-txt-color: black;
     --my-txt-color-2:black;
@@ -24,11 +23,14 @@
     --my-placeholder-txt-clr: rgb(44, 109, 9);
 }
 
+#color-schema-label-id {
+    color: var(--my-txt-color, #453ada);
+}
+
 .color-scheme-mode {
     background-color: var(--my-bg-color, #aabbcc);
     border-color: var(--my-border-color, red);
     color: var(--my-txt-color, #453ada);
-
     background-image: var(--my-bg-img);
     width: 100%;
     height: 100%;
