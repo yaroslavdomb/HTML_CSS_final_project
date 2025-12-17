@@ -1,24 +1,24 @@
 :root {
     --my-bg-color: black;
-    --my-txt-color: green;
-    --my-border-color: green;
-    --my-nav-menu-bg-color:#d3d3d3;
-    --my-txt-color_2: #86e9f0;
-    --my-button-bg-color:#c1bdf7;
-    --my-placeholder-txt-clr: #4b02f3;
+    --my-txt-color: rgb(0, 200, 0);
     --my-txt-color-2:white;
+    --my-txt-color-3: #0fecec;
+    --my-border-color: rgb(0, 200, 0);
+    --my-nav-menu-bg-color:#d3d3d3;
+    --my-button-bg-color:#c1bdf7;    
+    --my-placeholder-txt-clr: #4b02f3;
 } 
 
 #color-schema-checkbox-id:checked ~ *,
-#color-schema-checkbox-id:checked ~ * * {
-    --my-nav-menu-bg-color: yellow;
+#color-schema-checkbox-id:checked ~ * * {   
     --my-bg-color: white;
     --my-txt-color: black;
+    --my-txt-color-2:white;
+    --my-txt-color-3: #0fecec;    
     --my-border-color: #453ada;
-    --my-txt-color_2: #1c201f;
+    --my-nav-menu-bg-color: yellow;
     --my-button-bg-color:#c1bdf7;
     --my-placeholder-txt-clr: rgb(44, 109, 9);
-    --my-txt-color-2:black;
 }
 
 .color-scheme-mode {
