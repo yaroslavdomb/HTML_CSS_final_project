@@ -1,4 +1,4 @@
-ReadMe - V1.3
+ReadMe - V1.4
 Date: 17/DEC/2025
 
 Project purpose:
@@ -25,6 +25,8 @@ Files & Folders structure:
     Docs
         ReadMe.txt = currently you are reading this file
         CSS_HTML_expected = a very common description of what is expected from graduates of the course
+        script.html = script to create example of Sitemap.xml & run from html page
+        sitemap.xml = sitemap generated for my site
 
 Rules used for site creation:
     1) Any id should be named as "<id-name-here>-id"
