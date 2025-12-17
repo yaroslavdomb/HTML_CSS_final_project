@@ -431,3 +431,10 @@ but without displaying it on the screen*/
     transform: scale(2.5);
     opacity: 0.7;
 }
+
+.bottom-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--my-gap-bottom-menu);
+}
