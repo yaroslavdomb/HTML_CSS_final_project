@@ -1,5 +1,5 @@
-ReadMe - V1.2
-Date: 16/DEC/2025
+ReadMe - V1.3
+Date: 17/DEC/2025
 
 Project purpose:
     Final project for HTML+CSS section of learning in HackerU for "Full stack engineer".
