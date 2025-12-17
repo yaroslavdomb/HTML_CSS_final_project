@@ -65,12 +65,13 @@ List of customized variables
     Colors:
         --my-bg-color  = background color for dark/light mode
         --my-txt-color = text color for dark/light mode
+        --my-txt-color-2 = additional text color
+        --my-txt-color-3 = text color for footer header for dark/light mode
         --my-border-color = border color for dark/light mode
         --my-nav-menu-bg-color = background color for navigation elements on hover
-        --my-txt-color_2 = text color for footer header for dark/light mode
         --my-button-bg-color = background color for file "download" button on hover
         --my-placeholder-txt-clr = placeholder color
-        --my-txt-color-2 = additional text color
+        
     Responsivity:
         --my-margin-top-right-side = top margin for the message field
         --my-margin-top-h1 = top margin for the h1
