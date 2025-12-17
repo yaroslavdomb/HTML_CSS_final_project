@@ -261,10 +261,9 @@ select:valid + .mandatory-sign::after {
     justify-content: flex-end;
 }
 
-/* Design for footer header */
 .red-blue-radial-gradient {
-    background: radial-gradient(circle, rgb(255, 127, 127), rgb(107, 107, 252));
-    color: var(--my-txt-color_2);
+    background: radial-gradient(circle, rgb(2, 120, 18), rgb(107, 107, 252));
+    color: var(--my-txt-color-3);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     width: 85%;
     margin: 0.75rem auto;
@@ -296,11 +295,6 @@ select:valid + .mandatory-sign::after {
     flex-direction: column;
 }
 
-/*
-Design for "about" section.
-Links that used to get files has for of button 
-just for design purpose only
-*/
 .button-link {
     padding: 0.2rem 0.25rem;
     margin-left: 0.5rem;
@@ -397,7 +391,6 @@ but without displaying it on the screen*/
     visibility: visible;
 }
 
-/*subproject section*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
