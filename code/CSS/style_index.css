@@ -61,30 +61,25 @@ relative to the current) -  so body tag is unreachable from our point of view.
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
 }
 
 .main-navigation li {
     list-style-type: none;
-    border-left: solid 2px var(--my-border-color);
-    border-bottom: solid 2px var(--my-border-color); 
-    border-top: solid 2px var(--my-border-color);
+    border: solid 2px var(--my-border-color);
+    border-radius: 6px;
     padding: 0.75rem;    
     text-align: center;
     justify-content: center;
-}
-
-.main-navigation li:last-child {
-    border-right: solid 2px var(--my-border-color);
-}
-
-.background-transformation {
     background-color: var(--my-bg-color);
     transition: background-color 1.2s ease;
 }
 
-.background-transformation:hover {
+.main-navigation ul li:hover {
     background-color: var(--my-nav-menu-bg-color);
 }
 
@@ -97,6 +92,18 @@ ul {
 .growing-text:hover {
     transform:  scale(1.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-section {
     flex: 1;
