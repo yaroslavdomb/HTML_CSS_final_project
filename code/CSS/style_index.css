@@ -110,8 +110,8 @@ ul {
 }
 
 .h2-header-design{
-    padding: 10px;
-    margin: 10px;
+    padding: 0.75rem;
+    margin: 0.75rem;
     text-align: center;
     border-bottom-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
