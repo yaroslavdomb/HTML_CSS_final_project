@@ -340,7 +340,9 @@ select:valid + .mandatory-sign::after {
     display: none;
 }
 
-#details-id .socials {
+.socials {
+    justify-content: center;
+    margin: 1.5rem;
     display: flex;
     gap:0.5rem;
 }
