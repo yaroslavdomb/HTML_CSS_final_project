@@ -477,3 +477,7 @@ but without displaying it on the screen*/
 .go-home-text{
     display: none;
 }
+
+.left-space {
+    margin-left: 1%;
+}
