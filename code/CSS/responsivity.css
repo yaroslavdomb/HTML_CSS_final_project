@@ -6,7 +6,6 @@
     --my-image-height:5rem;
     --my-go-home-text-gap: 9%;
     --my-font-size:1rem;
-
 }
 
 @media (max-width: 1000px) {
@@ -18,11 +17,11 @@
         --my-image-height:3rem;
         --my-go-home-text-gap: 5%;
         --my-font-size:0.75rem;
+        --my-width-for-narrow-scr:10rem;
     }
 }
 
 @media (max-width: 800px) {
-    /* Navigation menu */
     .menu-on-narrow-screen + label {
         display: block;
         position: absolute;
@@ -66,5 +65,9 @@
     .text-content {
         text-align: left;
         width: 100%;
+    }
+
+    #get-in-touch-form input {
+        width: 80%;
     }
 }

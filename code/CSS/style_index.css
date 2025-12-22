@@ -108,9 +108,6 @@ a.growing-text:hover {
     color:blue !important;
 }
 
-
-
-
 .main-section {
     flex: 1;
 }
@@ -140,7 +137,7 @@ a.growing-text:hover {
 }
 
 .restore-styles li {
-  display: inline;
+    display: inline;
 }
 
 .text-content {
@@ -161,8 +158,8 @@ a.growing-text:hover {
     justify-content: center;
 }
 
-.resource{
-    margin: 25px;
+.resource {
+    margin: 1.5rem;
 }
 
 .take-me-home-image,
@@ -181,8 +178,8 @@ a.growing-text:hover {
     width: 5em;
     height: 5em;
     display: block;
-    border: 2px aqua solid;
-    border-radius: 8px;
+    border: 0.2rem aqua solid;
+    border-radius: 0.5rem;
 }
 
 section {
@@ -202,7 +199,7 @@ h1 {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
-    border: 2px var(--my-border-color) solid;
+    border: 0.15rem var(--my-border-color) solid;
 }
 
 .input-data {
@@ -234,8 +231,6 @@ input:valid + .mandatory-sign::after,
 select:valid + .mandatory-sign::after {
     visibility: hidden;
 }
-
-.get-in-touch-right-side,
 .get-in-touch-left-side {
     display: flex;
     flex-direction: column;
@@ -244,13 +239,16 @@ select:valid + .mandatory-sign::after {
 }
 
 .get-in-touch-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
     flex: 1;
     margin-top: var(--my-margin-top-right-side);
 }
 
 #message-id {
     width: 100%;
-    min-width: 15rem;
+    min-width: 10rem;
     height: 10rem;
     margin-top: 0.5rem;
     box-sizing: border-box;    
@@ -272,7 +270,7 @@ select:valid + .mandatory-sign::after {
 .red-blue-radial-gradient {
     background: radial-gradient(circle, rgb(2, 120, 18), rgb(107, 107, 252));
     color: var(--my-txt-color-3);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.5);
     width: 55%;
     margin: 0.75rem auto;
     display: block;
@@ -295,7 +293,7 @@ select:valid + .mandatory-sign::after {
 }
 
 .border {
-    border: 2px var(--my-border-color) solid;
+    border: 0.15rem var(--my-border-color) solid;
 }
 
 .vertical-order{
@@ -365,10 +363,10 @@ cause default value in "details" tag is length of summary
 but without displaying it on the screen*/
 .sr-only {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.1rem;
+    height: 0.1rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.1rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -387,7 +385,7 @@ but without displaying it on the screen*/
     position: absolute;
     white-space: nowrap;
     padding: 0.25rem 0.4rem;
-    border: 1px solid;
+    border: 0.1rem solid;
     font-size: 0.9rem;
     top: -1.6rem;
     left: 0;
