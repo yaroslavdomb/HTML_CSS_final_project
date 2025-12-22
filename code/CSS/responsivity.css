@@ -1,14 +1,18 @@
-:root{
-    --my-margin-top-right-side: 0rem;
-    --my-margin-top-h1: 4rem;
-    --my-gap-bottom-menu: 5rem;
-    --my-image-width:5rem;
-    --my-image-height:5rem;
-    --my-go-home-text-gap: 9%;
-    --my-font-size:1rem;
+
+:root {
+        --my-margin-top-right-side: 0rem;
+        --my-margin-top-h1: 4rem;
+        --my-gap-bottom-menu: 5rem;
+        --my-image-width:5rem;
+        --my-image-height:5rem;
+        --my-go-home-text-gap: 9%;
+        --my-font-size:1rem;
+        --my-font-size-h1:5rem;
+        --my-font-size-h2:2.5rem;
+        --my-font-size-h3:1.5rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     :root {
         --my-margin-top-right-side: 0.7rem;
         --my-margin-top-h1: 8rem;
@@ -17,11 +21,12 @@
         --my-image-height:3rem;
         --my-go-home-text-gap: 5%;
         --my-font-size:0.75rem;
+        --my-font-size-h1:3rem;
+        --my-font-size-h2:1.6rem;
+        --my-font-size-h3:1.1rem;
         --my-width-for-narrow-scr:10rem;
     }
-}
 
-@media (max-width: 800px) {
     .menu-on-narrow-screen + label {
         display: block;
         position: absolute;

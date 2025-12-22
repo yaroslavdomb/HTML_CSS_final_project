@@ -24,7 +24,7 @@
     <script src="../JS/darkMode.js" defer></script>
 </head>
 
-<body>
+<body id="top">
     <input type="checkbox" id="color-schema-checkbox-id" aria-label="Toggle dark mode">
     <label for="color-schema-checkbox-id" class="growing-text" id="color-schema-label-id">Light mode:
         off</label>
@@ -37,26 +37,22 @@
         <nav class="main-navigation" id="main-navigation-id" aria-label="Main navigation menu">
             <ul class="in-one-line">
                 <li>
-                    <a href="index.html" class="growing-text" aria-keyshortcuts="Alt+Shift+m" target="_blank"
-                        accesskey="m">Main</a>
+                    <a href="index.html" class="growing-text" target="_blank" accesskey="m">Main</a>
                 </li>
                 <li>
-                    <a href="subProject.html" class="growing-text" aria-keyshortcuts="Alt+Shift+s" target="_blank"
-                        accesskey="s">Sub-projects</a>
+                    <a href="subProject.html" class="growing-text" target="_blank" accesskey="s">Sub-projects</a>
                 </li>
                 <li>
-                    <a href="About.html" class="growing-text" aria-keyshortcuts="Alt+Shift+a" target="_blank"
-                        accesskey="a">About</a>
+                    <a href="About.html" class="growing-text" target="_blank" accesskey="a">About</a>
                 </li>
                 <li>
-                    <a href="Contact.html" class="growing-text" aria-keyshortcuts="Alt+Shift+c" target="_blank"
-                        accesskey="c">Contact</a>
+                    <a href="Contact.html" class="growing-text" target="_blank" accesskey="c">Contact</a>
                 </li>
             </ul>
         </nav>
 
-        <a href="#main-navigation-id" class="go-to-top" aria-label="Go to top">
-            <img class="mono-black-logo take-me-home-image" src="../../resources/pics/jumper.png" alt="">
+        <a href="#top" class="go-to-top" aria-label="Go to top">
+            <img class="mono-black-logo take-me-home-image" src="../../resources/pics/jumper.png" alt="Jump to  the t">
             <p class="go-home-text">Yeee-hoooo!!!</p>
         </a>
 
@@ -68,7 +64,7 @@
                 </header>
                 <article class="border">
                     <img class="my-image" src="../../resources/pics/avatar.jpg" alt="man avatar">
-                    <p>
+                    <p class="left-space">
                         Hi, usually I position myself as a BE developer. I deal with DBs (both
                         <span class="tooltip-container" tabindex="0" role="button" aria-describedby="tooltip-sql">
                             SQL
@@ -84,20 +80,17 @@
                         <br><br>
                         Be patient—I'm going to improve my knowledge and create something that won’t fail every time on
                         start. At least not at the beginning. )))
-
+                    </p>
                     <details id="details-id" class="center">
-                        <summary>
-                            <h3>Tell me a bit more...</h3>
-                        </summary>
-                        <p>
-                        <h4 class="h4-style">Languages in use:</h4>
+                        <summary class="left-space custom-h3">Tell me a bit more...</summary>
+                        <h4 class="custom-h4">Languages in use:</h4>
                         <ul>
                             <li>Java (8 - 21)</li>
                             <li>JavaScript (on my way)</li>
                             <li>C/C++ (very old versions)</li>
                         </ul>
 
-                        <h4 class="h4-style">DBs in use:</h4>
+                        <h4 class="custom-h4">DBs in use:</h4>
                         <ul>
                             <li>Oracle DB</li>
                             <li>PostgreSQL</li>
@@ -106,14 +99,14 @@
                             <li>Redis</li>
                         </ul>
 
-                        <h4 class="h4-style">VCS in use:</h4>
+                        <h4 class="custom-h4">VCS in use:</h4>
                         <ul>
                             <li>Git</li>
                             <li>P4</li>
                             <li>SVN</li>
                         </ul>
 
-                        <h4 class="h4-style">Testing:</h4>
+                        <h4 class="custom-h4">Testing:</h4>
                         <ul>
                             <li>POSTman</li>
                             <li>Insomnia</li>
@@ -121,26 +114,23 @@
                             <li>Ginger</li>
                         </ul>
 
-                        <h4 class="h4-style">Study:</h4>
+                        <h4 class="custom-h4">Study:</h4>
                         <ul>
                             <li>HackerU - on-line course for FullStack Dev (currently on it)</li>
                             <li>Udemia academy - on-line course for PostgreSQL</li>
                             <li>Sami Shamoon Colledge for Engenering</li>
                             <li>Ben Gurion University in Negev</li>
                         </ul>
-                        </p>
                     </details>
-
-                    </p>
                 </article>
             </section>
             <section id="about-id">
                 <header>
-                    <h2 class="h2-header-design">Full CV downloading</h2>
+                    <h2 class="h2-header-design">Download CV</h2>
                 </header>
-                <article class="vertical-order border">
-                    <div class="upload-cv">
-                        <label id="upload-label-id" class="left-space">CV formats available:</label>
+                <article class="vertical-order">
+                    <fieldset class="upload-cv border">
+                        <legend id="upload-label-id">CV formats available:</legend>
 
                         <input type="radio" id="pdf" name="cv-format" checked>
                         <label for="pdf">PDF</label>
@@ -148,13 +138,14 @@
                         <input type="radio" id="docx" name="cv-format">
                         <label for="docx">DOCX</label>
 
-                        <a href="../../resources/additional/CV_en_2025.pdf" class="download pdf button-link"
-                            download>Download as
-                            PDF</a>
-                        <a href="../../resources/additional/CV_en_2025.docx" class="download docx button-link"
-                            download>Download as
-                            DOCX</a>
-                    </div>
+                        <a href="../../resources/additional/CV_en_2025.pdf" class="download pdf button-link" download>
+                            Download as PDF
+                        </a>
+
+                        <a href="../../resources/additional/CV_en_2025.docx" class="download docx button-link" download>
+                            Download as DOCX
+                        </a>
+                    </fieldset>
                 </article>
             </section>
         </main>
