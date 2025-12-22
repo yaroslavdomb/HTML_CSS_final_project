@@ -44,8 +44,8 @@
 .color-scheme-mode a:visited,
 .color-scheme-mode a:hover,
 .color-scheme-mode a:active {
-    color: var(--my-txt-color) !important;
-    text-decoration: none !important;
+    color: var(--my-txt-color) ;
+    text-decoration: none;
 }
 
 /*
