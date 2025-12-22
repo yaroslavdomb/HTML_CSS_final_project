@@ -63,18 +63,6 @@
         border: none;
     }
 
-    /* Central block responsive code */
-    .text-image-block {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .side-image {
-        width: 90%;
-        max-width: 400px;
-    }
-
     .text-content {
         text-align: left;
         width: 100%;

@@ -60,12 +60,23 @@ relative to the current) -  so body tag is unreachable from our point of view.
     flex-wrap: wrap;
 }
 
-ul {
+.in-one-line {
     padding: 0.3rem;
     margin: 0.5rem;
     display: flex;
     flex-direction: row;
     gap: 0.75rem;
+}
+
+summary h3 {
+    display: inline; 
+    margin: 0;
+}
+
+.h4-style {
+    display: inline-block;
+    padding: 0.3rem;
+    margin: 0.5rem;
 }
 
 .main-navigation li {
@@ -99,12 +110,6 @@ ul {
 
 
 
-
-
-
-
-
-
 .main-section {
     flex: 1;
 }
@@ -120,6 +125,8 @@ ul {
     margin-top: 2.5rem;
 }
 
+
+/*About section*/
 .man_avatar {
     width: 250px;
     max-width: 40vw;
@@ -128,21 +135,18 @@ ul {
     border-radius: 7px;
 }
 
-/* Section related to the "resume" section */
-.text-image-block {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;    
-    padding: 5px;
-}
-
-.side-image {
-    width: 250px;
-    max-width: 40vw;
+.my-image {
+    float: left;
+    width: 15rem;
+    max-width: 25rem;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid black;
+    border-radius: 3rem;
+    padding: 0.5rem; 
+}
+
+.restore-styles li {
+  display: inline;
 }
 
 .text-content {
@@ -167,7 +171,7 @@ ul {
     margin: 25px;
 }
 
-.my-image {
+.tech-logo-image {
     width: var(--my-image-width);
     height: var(--my-image-height);
     object-fit: contain;
