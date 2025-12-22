@@ -171,6 +171,7 @@ summary h3 {
     margin: 25px;
 }
 
+.take-me-home-image,
 .tech-logo-image {
     width: var(--my-image-width);
     height: var(--my-image-height);
