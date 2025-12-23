@@ -111,7 +111,7 @@ a.growing-text:hover {
     flex: 1;
 }
 
-.h2-header-design{
+.custom-h2 {
     padding: 0.75rem;
     margin: 0.75rem;
     text-align: center;
@@ -121,7 +121,6 @@ a.growing-text:hover {
     border-style: double;
     margin-top: 2.5rem;
 }
-
 
 /*About section*/
 .my-image {
