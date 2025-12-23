@@ -8,7 +8,7 @@
         --my-go-home-text-gap: 9%;
         --my-font-size:1rem;
         --my-font-size-h1:5rem;
-        --my-font-size-h2:2.5rem;
+        --my-font-size-h2:1.9rem;
         --my-font-size-h3:1.5rem;
 }
 
@@ -22,7 +22,7 @@
         --my-go-home-text-gap: 5%;
         --my-font-size:0.75rem;
         --my-font-size-h1:3rem;
-        --my-font-size-h2:1.6rem;
+        --my-font-size-h2:1.5rem;
         --my-font-size-h3:1.1rem;
         --my-width-for-narrow-scr:10rem;
     }
