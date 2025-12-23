@@ -320,11 +320,18 @@ select:valid + .mandatory-sign::after {
     background-color: #f4e802;
 }
 
-#pdf:checked ~ .pdf {
+.upload-cv {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#pdf:checked ~ div .pdf {
     display: inline-block;
 }
 
-#docx:checked ~ .docx {
+#docx:checked ~ div .docx {
     display: inline-block;
 }
 
