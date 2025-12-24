@@ -483,3 +483,42 @@ but without displaying it on the screen*/
 .left-space {
     margin-left: 5%;
 }
+
+/*main page hidden info design*/
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card pre {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.veil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        color-mix(in srgb, var(--my-bg-color) 100%, transparent 5%) 100%,
+        color-mix(in srgb, var(--my-bg-color) 100%, transparent 100%) 100%
+    );
+    transform: translateY(0);
+    transition: transform 6s linear;
+}
+
+.card:hover .veil {
+    transform: translateY(100%);
+}
+
+.atomic-moved {
+  display: table;
+  margin: 0 auto;
+  white-space: pre;
+}
