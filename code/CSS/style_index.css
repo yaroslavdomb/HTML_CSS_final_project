@@ -509,7 +509,7 @@ but without displaying it on the screen*/
     height: 100%;
     background: linear-gradient(
         to bottom,
-        color-mix(in srgb, var(--my-bg-color) 100%, transparent 5%) 100%,
+        color-mix(in srgb, var(--my-bg-color) 100%, transparent 0%) 100%,
         color-mix(in srgb, var(--my-bg-color) 100%, transparent 100%) 100%
     );
     transform: translateY(0);
@@ -540,4 +540,12 @@ but without displaying it on the screen*/
 
 #stay-opened-checkbox-id:checked ~ div.veil {
     transform: translateY(100%);
+}
+
+.strong-style {
+    font-weight: 600;
+}
+
+.italic-style {
+    font-style: italic;
 }
