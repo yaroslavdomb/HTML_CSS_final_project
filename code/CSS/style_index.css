@@ -525,3 +525,19 @@ but without displaying it on the screen*/
     white-space: pre;
     text-align: left;
 }
+
+#stay-opened-label-id {
+    position: absolute;
+    bottom: 0;
+    right: 1.3rem;
+}
+
+#stay-opened-checkbox-id {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#stay-opened-checkbox-id:checked ~ div.veil {
+    transform: translateY(100%);
+}
