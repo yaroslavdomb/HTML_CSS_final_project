@@ -12,17 +12,22 @@ relative to the current) -  so body tag is unreachable from our point of view.
 */
 #color-schema-checkbox-id {
     position: fixed;
-    top: 1.2rem;
-    right: 0.7rem;    
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
 }
 
 #color-schema-label-id {    
     position: fixed;
     top: 1rem;
-    right: 2rem;
+    right: 1rem;
+    cursor: pointer;
     font-size: medium;
     margin-right: 1rem;
     transition: transform 0.7s ease;
+    display: inline-block;
+    user-select: none;
 }
 
 #color-schema-label:hover {    
@@ -549,3 +554,4 @@ but without displaying it on the screen*/
 .italic-style {
     font-style: italic;
 }
+
