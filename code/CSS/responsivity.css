@@ -11,6 +11,9 @@
     --my-font-size-h1:5rem;
     --my-font-size-h2:1.9rem;
     --my-font-size-h3:1.5rem;
+    --my-logo-width: 5rem;
+    --my-logo-height: 5rem;
+    --my-margin-top-with-logo: calc(var(--my-logo-height) + 1.5rem);
 }
 
 .menu-on-narrow-screen + label {
@@ -39,6 +42,9 @@
         --my-font-size-h2:1.5rem;
         --my-font-size-h3:1.1rem;
         --my-width-for-narrow-scr:10rem;
+        --my-logo-width: 3rem;
+        --my-logo-height: 3rem;
+        --my-margin-top-with-logo: calc(var(--my-logo-height) + 4rem);
     }
 
     .menu-on-narrow-screen + label {
@@ -68,7 +74,8 @@
 
     /*Need to move H1 on opened main menu*/
     .menu-on-narrow-screen:checked ~ * {        
-        --my-margin-top-h1: 22rem;        
+        --my-margin-top-h1: 22rem;
+        --my-margin-top-with-logo:22rem;
     }
 
     .main-navigation > ul > li {
