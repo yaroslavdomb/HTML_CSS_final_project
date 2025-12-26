@@ -1,0 +1,72 @@
+#traffic-light-id {
+    width: var(--my-width-tlight);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+ul.circle-form {
+    list-style: none;
+    padding: 0%;
+    position: relative;
+}
+
+.circle-form {
+    width: calc(var(--my-width-tlight)/1.4);
+    height: calc(var(--my-width-tlight)/1.4);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 0.35rem var(--my-border-color-traffic) solid;
+}
+
+#red:hover {
+    background-color: red;
+}
+
+#red:hover .animated {
+    color: red;
+    font-size: large;
+    animation: comeFromRight 2s ease-out forwards;
+}
+
+#yellow:hover {
+    background-color: yellow;
+}
+
+#yellow:hover .animated {
+    color: rgb(181, 181, 10);
+    font-size: large;
+    animation: comeFromRight 2s ease-out forwards;
+}
+
+#green:hover {
+    background-color: green;
+}
+
+#green:hover .animated {
+    color: green;
+    font-size: large;
+    animation: comeFromRight 2s ease-out forwards;
+}
+
+.animated {
+    position:relative;
+    right: calc(-50vw - var(--my-width-tlight)/2);
+    top: 40%;
+    display: inline-block;
+    width: max-content;
+    border: 0.15rem var(--my-border-color-traffic) solid;
+    border-radius: 0.5rem;
+    background: var(--my-border-color-traffic);    
+}
+
+@keyframes comeFromRight {
+    from {
+        right: calc(-50vw - var(--my-width-tlight)/2);
+    }
+    to {
+        right: calc(0vw - var(--my-width-tlight));
+    }
+}

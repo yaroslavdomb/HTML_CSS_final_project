@@ -2,12 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     position: relative;
 }
-
-
 
 /*
 To make dark/light mode applied for all the page we take switcher out of document stream by

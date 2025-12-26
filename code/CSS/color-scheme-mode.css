@@ -7,6 +7,7 @@
     --my-nav-menu-bg-color:#d3d3d3;
     --my-button-bg-color:rgb(62, 67, 14);    
     --my-placeholder-txt-clr: #4b02f3;
+    --my-border-color-traffic:white;
 } 
 
 #color-schema-checkbox-id:checked ~ *,
@@ -20,6 +21,7 @@
     --my-nav-menu-bg-color: yellow;
     --my-button-bg-color:#c1bdf7;
     --my-placeholder-txt-clr: rgb(44, 109, 9);
+    --my-border-color-traffic:#0fecec;
 }
 
 #color-schema-label-id {

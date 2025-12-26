@@ -86,3 +86,4 @@ Pictures resources:
 
 1) woman jumper = pole vault clipart #4009885 (License. Personal Use) (https://clipart-library.com/clipart/pole-vault-clipart_10.html)
 2)  = background for light mode (https://pixabay.com/illustrations/ai-generated-ship-border-sea-sail-8321771/)
+3) trafficLight = icon for traffic light subproject (https://pixabay.com/vectors/button-icon-symbol-traffic-light-7850702/)

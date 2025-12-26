@@ -14,6 +14,8 @@
     --my-logo-width: 5rem;
     --my-logo-height: 5rem;
     --my-margin-top-with-logo: calc(var(--my-logo-height) + 1.5rem);
+    --my-height-tlight:30rem;
+    --my-width-tlight:calc(var(--my-height-tlight)/3);
 }
 
 .menu-on-narrow-screen + label {
