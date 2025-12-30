@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yaroslav Domb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Aria, noJS, AI for site construction">
+    <meta name="description" content="Final project for HTML/CSS section of learning for full stack engeneering">
+
+    <meta property="og:title" content="Portfolio — Yaroslav Domb">
+    <meta property="og:description"
+        content="Final project for HTML/CSS section of learning for full stack engineering. Explore my skills in Java, Spring, OracleDB.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio — Yaroslav Domb">
+    <meta name="twitter:description"
+        content="Final project for HTML/CSS section of learning for full stack engineering. Explore my skills in Java, Spring, OracleDB.">
+
+    <title>Final project-Main</title>
+
+    <link rel="icon" href="/resources/pics/icons8-school-80.png" type="image/png">
+    <link rel="stylesheet" href="/code/CSS/fonts.css">
+    <link rel="stylesheet" href="/code/CSS/style_index.css">
+    <link rel="stylesheet" href="/code/CSS/color-scheme-mode.css">
+    <link rel="stylesheet" href="/code/CSS/responsivity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="/code/JS/darkMode.js" defer></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="color-schema-checkbox-id" aria-label="Toggle dark mode">
+    <label for="color-schema-checkbox-id" class="growing-text" id="color-schema-label-id">Light mode: off </label>
+
+    <div class="color-scheme-mode full-site-design">
+        <input type="checkbox" id="menu-on-narrow-screen-id" class="menu-on-narrow-screen"
+            aria-label="Toggle navigation menu" />
+        <label for="menu-on-narrow-screen-id" aria-label="Open menu">☰ Menu</label>
+
+        <nav class="main-navigation" id="main-navigation-id" aria-label="Main navigation menu">
+            <ul class="in-one-line">
+                <li>
+                    <a href="index.html" class="growing-text" target="_blank" accesskey="m" rel="noopener noreferrer"
+                        aria-label="Open in new tab: Main page">Main</a>
+                </li>
+                <li>
+                    <a href="/code/HTML/subProject.html" class="growing-text" target="_blank" accesskey="s"
+                        rel="noopener noreferrer" aria-label="Open in new tab: Sub-projects page">Sub-projects</a>
+                </li>
+                <li>
+                    <a href="/code/HTML/About.html" class="growing-text" target="_blank" accesskey="a" rel="noopener noreferrer"
+                        aria-label="Open in new tab: About page">About</a>
+                </li>
+                <li>
+                    <a href="/code/HTML/Contact.html" class="growing-text" target="_blank" accesskey="c" rel="noopener noreferrer"
+                        aria-label="Open in new tab: Contact page">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section aria-label="Section for image for my logo" id="logo-section-id">
+            <img class="logo" src="resources/pics/my_logo_1.png" alt="Yaroslav Domb logo">
+        </section>
+
+        <h1 class="respect-logo">Portfolio</h1>
+        <main class="main-section" id="main-section-id">
+            <section class="border">
+                <header>
+                    <h2>Hi there from...</h2>
+                </header>
+                <article class="greeting-card">
+                    <pre class="atomic-block">
+                        <code>
+public class <span class="strong-style">BE_Developer</span> {
+    String <span class="italic-style">fullName</span> = "<span class="strong-style">Yaroslav Domb</span>";
+    String[] <span class="italic-style">skills</span> = {"<span class="strong-style">Java</span>", "Spring", "OracleDB"};
+    int <span class="italic-style">experience</span> = 13;
+}
+                        </code>
+//You are welcome to check the other pages for more information.
+                    </pre>
+                    <label for="stay-opened-checkbox-id" id="stay-opened-label-id">Stay opened</label>
+                    <input type="checkbox" id="stay-opened-checkbox-id" aria-label="Toggle stay opened mode">
+                    <div class="veil"></div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="centered">
+            <h2 class="custom-h2 red-blue-radial-gradient" id="tech-id">Technologies and resources been used
+            </h2>
+            <ul class="resource-list in-one-line">
+                <li class="resource no-list-style">
+                    <a href="https://www.istockphoto.com/illustrations/man-face-silhouette" target="_blank"
+                        rel="noopener noreferrer" aria-label="Open in new tab: istockphoto.com">
+                        <img src="resources/pics/IStockLogo.svg" class="mono-white-logo tech-logo-image"
+                            alt="IStock logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://icons8.com" rel="noopener noreferrer"
+                        aria-label="Open in new tab: icons8.com">
+                        <img src="resources/pics/logo-icons8.svg" class="tech-logo-image" alt="Icons8 logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://commons.wikimedia.org/wiki/Main_Page" rel="noopener noreferrer"
+                        aria-label="Open in new tab: wikimedia.org">
+                        <img src="resources/pics/Wikimedia.webp" class="tech-logo-image" alt="Wikimedia logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://openai.com/" rel="noopener noreferrer"
+                        aria-label="Open in new tab: openai.com">
+                        <img src="resources/pics/chatGPT_logo.png" class="mono-black-logo tech-logo-image"
+                            alt="OpenAI logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://claude.ai/" rel="noopener noreferrer"
+                        aria-label="Open in new tab: claude.ai">
+                        <img src="resources/pics/Claude.png" class="tech-logo-image" alt="Claude logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/"
+                        aria-label="Open in new tab: w3.org">
+                        <img src="resources/pics/html5-icon-1.jpg" class="tech-logo-image" alt="HTML5 logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="noopener noreferrer"
+                        aria-label="Open in new tab: developer.mozilla.org">
+                        <img src="resources/pics/CSS-3_logo_3.png" class="tech-logo-image" alt="CSS3 logo">
+                    </a>
+                </li>
+                <li class="resource no-list-style">
+                    <a target="_blank" href="https://git-scm.com/" rel="noopener noreferrer"
+                        aria-label="Open in new tab: git-scm.com">
+                        <img src="resources/pics/Git.png" class="tech-logo-image" alt="Git logo">
+                    </a>
+                </li>
+            </ul>
+
+            <hr class="divider">
+
+            <nav aria-label="Footer navigation">
+                <ul class="bottom-menu in-one-line">
+                    <li>
+                        <a href="index.html" target="_blank" rel="noopener noreferrer"
+                            aria-label="Open in new tab: Main page">Main</a>
+                    </li>
+                    <li>
+                        <a href="/code/HTML/subProject.html" target="_blank" rel="noopener noreferrer"
+                            aria-label="Open in new tab: Sub-projects page">Sub-projects</a>
+                    </li>
+                    <li>
+                        <a href="/code/HTML/About.html" target="_blank" rel="noopener noreferrer"
+                            aria-label="Open in new tab: About page">About</a>
+                    </li>
+                    <li>
+                        <a href="/code/HTML/Contact.html" target="_blank" rel="noopener noreferrer"
+                            aria-label="Open in new tab: Contact page">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr class="divider">
+            <div>All rights reserved 2025</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
