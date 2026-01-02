@@ -1,0 +1,37 @@
+:root{--my-margin-top-right-side:0rem;--my-margin-top-h1:4rem;--my-margin-top-h2:2rem;--my-gap-bottom-menu:5rem;--my-top-shift-h1:0rem;--my-image-width:5rem;--my-image-height:5rem;--my-go-home-text-gap:calc(var(--my-image-width) + 0.5rem);--my-font-size:1rem;--my-font-size-h1:5rem;--my-font-size-h2:1.9rem;--my-font-size-h3:1.5rem;--my-logo-width:5rem;--my-logo-height:5rem;--my-margin-top-with-logo:calc(var(--my-logo-height) + 1.5rem);--my-height-tlight:30rem;--my-width-tlight:calc(var(--my-height-tlight) / 3)}
+.menu-on-narrow-screen+label{display:none}
+.menu-on-narrow-screen{display:none;position:absolute;top:0rem;left:0;padding:.5em 1em;cursor:pointer}
+@media (max-width:700px){
+:root{--my-margin-top-right-side:0.7rem;--my-margin-top-h1:4rem;--my-gap-bottom-menu:2rem;--my-image-width:3rem;--my-image-height:3rem;--my-go-home-text-gap:calc(var(--my-image-width) + 0.5rem);--my-font-size:0.75rem;--my-font-size-h1:3rem;--my-font-size-h2:1.5rem;--my-font-size-h3:1.1rem;--my-width-for-narrow-scr:10rem;--my-logo-width:3rem;--my-logo-height:3rem;--my-margin-top-with-logo:calc(var(--my-logo-height) + 4rem)}
+.menu-on-narrow-screen+label{display:block;position:absolute;top:0;left:0;padding:.5em 1em;cursor:pointer;z-index:10}
+.main-navigation{display:none;flex-direction:column;align-items:flex-start;position:absolute;top:2.5em;left:0;width:8.5rem;z-index:5}
+.menu-on-narrow-screen:checked+label+.main-navigation{display:flex}
+.menu-on-narrow-screen:checked~*{--my-margin-top-h1:22rem;--my-margin-top-with-logo:22rem}
+.main-navigation>ul>li{width:100%}
+.main-navigation li a{display:block;text-align:left;padding:.2rem .2rem .2rem .4rem}
+.main-navigation li,.main-navigation li:last-child{border:none}
+.text-content{text-align:left;width:100%}
+#get-in-touch-form input{width:80%}
+}
+.desktop{display:block!important}
+.tablet{display:none!important}
+.tablet-mini{display:none!important}
+.mobile{display:none!important}
+@media (max-width:1150px){
+.desktop{display:none!important}
+.tablet{display:block!important}
+.tablet-mini{display:none!important}
+.mobile{display:none!important}
+}
+@media (max-width:750px){
+.desktop{display:none!important}
+.tablet{display:none!important}
+.tablet-mini{display:block!important}
+.mobile{display:none!important}
+}
+@media (max-width:450px){
+.desktop{display:none!important}
+.tablet{display:none!important}
+.tablet-mini{display:none!important}
+.mobile{display:block!important}
+}
