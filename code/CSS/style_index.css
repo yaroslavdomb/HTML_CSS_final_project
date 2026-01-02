@@ -71,6 +71,7 @@ relative to the current) -  so body tag is unreachable from our point of view.
 }
 
 summary.custom-h3 {
+  margin-top: 0.5rem;
   font-size: var(--my-font-size-h3);
 }
 
@@ -148,11 +149,15 @@ a.growing-text:hover {
 }
 
 /*About section*/
-.my-image {
+/* .my-image {
     float: left;
     width: clamp(6rem, 19%, 12rem);
     border-radius: 3rem;
     padding: 0.5rem;
+} */
+
+.float-context {
+  display:flow-root;
 }
 
 .restore-styles li {
@@ -610,6 +615,29 @@ but without displaying it on the screen*/
 
 .italic-style {
   font-style: italic;
+}
+
+.img-text-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.image-block {
+    float: left;
+    width: clamp(6rem, 19%, 12rem);
+    height: auto;
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+}
+
+.text-block {
+    flex: 1;
+    min-width: 12.5rem;
+    line-height: 1.5rem;
 }
 
 .left-space {
