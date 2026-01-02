@@ -104,3 +104,23 @@
         width: 80%;
     }
 }
+
+.mobile-version {
+    display: none !important;
+}
+
+.desktop-version {
+    display: block !important;
+}
+
+@media (max-width: 1150px) {
+    
+    .desktop-version,
+    .desktop-version .veil {
+        display: none !important;
+    }
+    
+    .mobile-version {
+        display: block !important;
+    }
+}
