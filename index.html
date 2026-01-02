@@ -75,8 +75,8 @@
                 <header>
                     <h2>Hi there from...</h2>
                 </header>
-                <article class="greeting-card desktop-version">
-                    <pre class="atomic-block">
+                <article class="greeting-card">
+                    <pre class="atomic-block desktop">
                         <code>
 public class <span class="strong-style">BE_Developer</span> {
     String <span class="italic-style">fullName</span> = "<span class="strong-style">Yaroslav Domb</span>";
@@ -86,31 +86,56 @@ public class <span class="strong-style">BE_Developer</span> {
                         </code>
 //You are welcome to check the other pages for more information.
                     </pre>
-                    <label for="stay-opened-checkbox-id" id="stay-opened-label-id">Stay opened</label>
-                    <input type="checkbox" id="stay-opened-checkbox-id" aria-label="Toggle stay opened mode">
-                    <div class="veil"></div>
-                </article>
 
-                <article class="greeting-card mobile-version centered">
-                    <pre class="atomic-block">
+                    <pre class="atomic-block tablet">
+                        <code>
 {
-<span class="italic-style">"position": </span>
-    <span class="strong-style">"BE_Developer",</span>
-<span class="italic-style">"fullName": </span>
-    <span class="strong-style">"Yaroslav Domb",</span>
-<span class="italic-style">"Skills": [</span>
-    <span class="strong-style">"Java",</span>
-    "OracleDB", 
-    "Spring"],
-<span class="italic-style">"Experiance"</span>: 
-    <span class="strong-style">13</span>
+<span class="strong-style">position = BE_Developer</span> 
+<span class="italic-style">fullName</span> = "<span class="strong-style">Yaroslav Domb</span>",
+<span class="italic-style">skills</span> = ["<span class="strong-style">Java</span>", "Spring", "OracleDB"],
+<span class="italic-style">experience</span> = 13;
 }
+                        </code>
                     </pre>
+
+                    <pre class="atomic-block tablet-mini">
+                        <code>
+{
+    <span class="italic-style">position</span> = 
+        <span class="strong-style">BE_Developer</span> 
+    <span class="italic-style">fullName</span> = 
+        "<span class="strong-style">Yaroslav Domb</span>",
+    <span class="italic-style">skills</span> = 
+        ["<span class="strong-style">Java</span>", 
+        "Spring", 
+        "OracleDB"],
+    <span class="italic-style">experience</span> = 
+        13;
+}
+                        </code>
+                    </pre>
+
+                    <pre class="atomic-block mobile">
+                        <code>
+{
+<span class="italic-style">position</span> =
+<span class="strong-style">BE_Developer</span>
+<span class="italic-style">fullName</span> = 
+"<span class="strong-style">Yaroslav Domb</span>",
+<span class="italic-style">skills</span> = 
+["<span class="strong-style">Java</span>", 
+"Spring", 
+"OracleDB"],
+<span class="italic-style">experience</span> = 
+13;
+}
+                        </code>
+                    </pre>
+
                     <label for="stay-opened-checkbox-id" id="stay-opened-label-id">Stay opened</label>
                     <input type="checkbox" id="stay-opened-checkbox-id" aria-label="Toggle stay opened mode">
                     <div class="veil"></div>
                 </article>
-
             </section>
         </main>
 
