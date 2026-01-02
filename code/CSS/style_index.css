@@ -496,8 +496,6 @@ but without displaying it on the screen*/
 }
 
 .greeting-card pre {
-    width: auto;
-    height: auto;
     display: inline-block;
     white-space: pre;
 }
@@ -515,9 +513,12 @@ but without displaying it on the screen*/
     );
     transform: translateY(0);
     transition: transform 6s linear;
+    pointer-events: none;
 }
 
-.greeting-card:hover .veil {
+.greeting-card:hover .veil,
+.greeting-card:active .veil,
+#stay-opened-checkbox-id:checked ~ .veil {
     transform: translateY(100%);
 }
 
@@ -541,7 +542,7 @@ but without displaying it on the screen*/
     right: 0;
 }
 
-#stay-opened-checkbox-id:checked ~ div.veil {
+#stay-opened-checkbox-id:checked ~ .veil {
     transform: translateY(100%);
 }
 
