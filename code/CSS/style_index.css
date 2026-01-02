@@ -34,6 +34,12 @@ relative to the current) -  so body tag is unreachable from our point of view.
     user-select: none;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    #color-schema-label:active {    
+        transform: translateX(-1rem) scale(1.2);    
+    }
+}
+
 #color-schema-label:hover {    
     transform: translateX(-1rem) scale(1.2);    
 }
@@ -90,8 +96,16 @@ summary.custom-h3 {
     transition: background-color 1.2s ease;
 }
 
-.main-navigation ul li:hover {
-    background-color: var(--my-nav-menu-bg-color);
+@media (hover: hover) and (pointer: fine) {
+    .main-navigation ul li:hover {
+        background-color: var(--my-nav-menu-bg-color);
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .main-navigation ul li:active {
+        background-color: var(--my-nav-menu-bg-color);
+    }
 }
 
 .growing-text {
@@ -100,13 +114,6 @@ summary.custom-h3 {
     transition: transform 1s ease;
 }
 
-.growing-text:hover {
-    transform:  scale(1.2);
-}
-
-a.growing-text:hover {
-    color:blue !important;
-}
 
 .main-section {
     flex: 1;
@@ -320,8 +327,16 @@ select:valid + .mandatory-sign::after {
     text-align: center;
 }
 
-.button-link:hover {
-    background-color: #f4e802;
+@media (hover: hover) and (pointer: fine) {
+    .button-link:hover {
+        background-color: #f4e802;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .button-link:active {
+        background-color: #f4e802;
+    }
 }
 
 .upload-cv {
@@ -405,6 +420,13 @@ but without displaying it on the screen*/
     background-color: var(--my-bg-color);
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .tooltip-container:active .tooltip-text,
+    .tooltip-container:focus .tooltip-text {
+        visibility: visible;
+    }
+}
+
 .tooltip-container:hover .tooltip-text,
 .tooltip-container:focus .tooltip-text {
     visibility: visible;
@@ -445,6 +467,14 @@ but without displaying it on the screen*/
     opacity: 0.7;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .expandable:active {
+        transform: scale(2.5);
+        opacity: 0.7;
+    }
+}
+
+
 .bottom-menu {
     display: flex;
     flex-wrap: wrap;
@@ -466,6 +496,18 @@ but without displaying it on the screen*/
     position: fixed;
     bottom: 1%;
     right: 1%;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .go-to-top:active .go-home-text{
+        position: fixed;
+        bottom: var(--my-go-home-text-gap);
+        color: var(--my-txt-color-2);
+        right: 2%;
+        display: block;
+        font-size: var(--my-font-size);
+    }
+
 }
 
 .go-to-top:hover .go-home-text{
@@ -517,8 +559,14 @@ but without displaying it on the screen*/
     pointer-events: none;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .greeting-card:active .veil,
+    #stay-opened-checkbox-id:checked ~ .veil {
+        transform: translateY(100%);
+    }
+}
+
 .greeting-card:hover .veil,
-.greeting-card:active .veil,
 #stay-opened-checkbox-id:checked ~ .veil {
     transform: translateY(100%);
 }
