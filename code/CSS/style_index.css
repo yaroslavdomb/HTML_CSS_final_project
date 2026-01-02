@@ -155,7 +155,7 @@ a.growing-text:hover {
   height: auto;
   object-fit: cover;
   border-radius: 3rem;
-  padding: 0.5rem;
+  margin: 0.75rem;
 }
 
 .restore-styles li {
@@ -326,6 +326,10 @@ select:valid + .mandatory-sign::after {
 
 .border {
   border: 0.15rem var(--my-border-color) solid;
+}
+
+.float-context {
+  display: flow-root;
 }
 
 .vertical-order {
@@ -539,7 +543,7 @@ but without displaying it on the screen*/
 }
 
 .left-space {
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 /*main page hidden info design*/
