@@ -149,13 +149,10 @@ a.growing-text:hover {
 
 /*About section*/
 .my-image {
-  float: left;
-  min-width: 20%;
-  width: 23%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 3rem;
-  margin: 0.75rem;
+    float: left;
+    width: clamp(6rem, 19%, 12rem);
+    border-radius: 3rem;
+    padding: 0.5rem;
 }
 
 .restore-styles li {
@@ -328,13 +325,9 @@ select:valid + .mandatory-sign::after {
   border: 0.15rem var(--my-border-color) solid;
 }
 
-.float-context {
-  display: flow-root;
-}
-
-.vertical-order {
-  display: flex;
-  flex-direction: column;
+.vertical-order{
+    display: flex;
+    flex-direction: column;
 }
 
 .button-link {
@@ -542,10 +535,6 @@ but without displaying it on the screen*/
   display: none;
 }
 
-.left-space {
-  margin-left: 2%;
-}
-
 /*main page hidden info design*/
 .greeting-card {
   position: relative;
@@ -621,4 +610,8 @@ but without displaying it on the screen*/
 
 .italic-style {
   font-style: italic;
+}
+
+.left-space {
+  margin-left: 0.5rem;
 }
