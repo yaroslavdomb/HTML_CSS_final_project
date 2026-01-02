@@ -1,9 +1,9 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
+  position: relative;
 }
 
 /*
@@ -15,354 +15,371 @@ All this done due to limitation of pure HTML/CSS (we can't reach parent nodes
 relative to the current) -  so body tag is unreachable from our point of view. 
 */
 #color-schema-checkbox-id {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0.1rem;
-    height: 0.1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0.1rem;
+  height: 0.1rem;
 }
 
-#color-schema-label-id {    
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: medium;
-    margin-right: 1rem;
-    transition: transform 0.7s ease;
-    display: inline-block;
-    user-select: none;
+#color-schema-label-id {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: medium;
+  margin-right: 1rem;
+  transition: transform 0.7s ease;
+  display: inline-block;
+  user-select: none;
 }
 
 @media (hover: none) and (pointer: coarse) {
-    #color-schema-label:active {    
-        transform: translateX(-1rem) scale(1.2);    
-    }
+  #color-schema-label:active {
+    transform: translateX(-1rem) scale(1.2);
+  }
 }
 
-#color-schema-label:hover {    
-    transform: translateX(-1rem) scale(1.2);    
+#color-schema-label:hover {
+  transform: translateX(-1rem) scale(1.2);
 }
 
 .no-list-style {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .full-site-design {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .main-navigation ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .in-one-line {
-    padding: 0.3rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    gap: 0.75rem;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
 }
 
 summary.custom-h3 {
-    font-size: var(--my-font-size-h3);
+  font-size: var(--my-font-size-h3);
 }
 
 .bottom-space {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .custom-h4 {
-    display: inline-block;
-    padding: 0.3rem;
-    margin: 0.5rem;
+  display: inline-block;
+  padding: 0.3rem;
+  margin: 0.5rem;
 }
 
 .main-navigation li {
-    list-style-type: none;
-    border: solid 0.15rem var(--my-border-color);
-    border-radius: 1rem;
-    padding: 0.75rem;    
-    text-align: center;
-    justify-content: center;
-    background-color: var(--my-bg-color);
-    transition: background-color 1.2s ease;
+  list-style-type: none;
+  border: solid 0.15rem var(--my-border-color);
+  border-radius: 1rem;
+  padding: 0.75rem;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--my-bg-color);
+  transition: background-color 1.2s ease;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .main-navigation ul li:hover {
-        background-color: var(--my-nav-menu-bg-color);
-    }
+  .main-navigation ul li:hover {
+    background-color: var(--my-nav-menu-bg-color);
+  }
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .main-navigation ul li:active {
-        background-color: var(--my-nav-menu-bg-color);
-    }
+  .main-navigation ul li:active {
+    background-color: var(--my-nav-menu-bg-color);
+  }
 }
 
 .growing-text {
-    display: inline-block;
-    font-size: medium;
-    transition: transform 1s ease;
+  display: inline-block;
+  font-size: medium;
+  transition: transform 1s ease;
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .growing-text:active {
+    transform: scale(1.2);
+  }
+}
+.growing-text:hover {
+  transform: scale(1.2);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  a.growing-text:active {
+    color: blue !important;
+  }
+}
+
+a.growing-text:hover {
+  color: blue !important;
+}
 
 .main-section {
-    flex: 1;
+  flex: 1;
 }
 
 .custom-h2 {
-    padding: 0.75rem;
-    margin: 0.75rem;
-    text-align: center;
-    border-bottom-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    border-color: blueviolet;
-    border-style: double;
-    margin-top: 2.5rem;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  text-align: center;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-color: blueviolet;
+  border-style: double;
+  margin-top: 2.5rem;
 }
 
 /*About section*/
 .my-image {
-    float: left;
-    min-width: 20%;
-    width: 23%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 3rem;
-    padding: 0.5rem; 
+  float: left;
+  min-width: 20%;
+  width: 23%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3rem;
+  padding: 0.5rem;
 }
 
 .restore-styles li {
-    display: inline;
+  display: inline;
 }
 
 .text-content {
-    flex: 1;
-    font-size: 1rem;
-    line-height: 1.5rem;
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 .resource-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .resource {
-    margin: 1.5rem;
+  margin: 1.5rem;
 }
 
 .take-me-home-image,
 .tech-logo-image {
-    width: var(--my-image-width);
-    height: var(--my-image-height);
-    object-fit: contain;
-    display: block;
+  width: var(--my-image-width);
+  height: var(--my-image-height);
+  object-fit: contain;
+  display: block;
 }
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: var(--my-logo-width);
-    height: var(--my-logo-height);
-    display: block;
-    border: 0.2rem aqua solid;
-    border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--my-logo-width);
+  height: var(--my-logo-height);
+  display: block;
+  border: 0.2rem aqua solid;
+  border-radius: 0.5rem;
 }
 
 section {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 h1 {
-    margin-top: var(--my-margin-top-h1);
-    text-align: center;
-    font-size: var(--my-font-size-h1);
+  margin-top: var(--my-margin-top-h1);
+  text-align: center;
+  font-size: var(--my-font-size-h1);
 }
 
 h1.respect-logo {
-    margin-top: var(--my-margin-top-with-logo);
+  margin-top: var(--my-margin-top-with-logo);
 }
 
 h2 {
-    margin-top: var(--my-margin-top-h2);
-    text-align: center;
-    font-size: var(--my-font-size-h2);
+  margin-top: var(--my-margin-top-h2);
+  text-align: center;
+  font-size: var(--my-font-size-h2);
 }
 
 #get-in-touch-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
-    border: 0.15rem var(--my-border-color) solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 0.15rem var(--my-border-color) solid;
 }
 
 .input-data {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 input::placeholder {
-    font-style: italic;
-    color: var(--my-placeholder-txt-clr);
-    opacity: 0.6;
+  font-style: italic;
+  color: var(--my-placeholder-txt-clr);
+  opacity: 0.6;
 }
 
 .label-column {
-    display: inline-block;
-    width: 6rem;
+  display: inline-block;
+  width: 6rem;
 }
 
 /* star (for mandatory input field) design */
-.mandatory-sign::after{
-    content: "*";
-    color: red;
-    margin-left: 0.2rem;
+.mandatory-sign::after {
+  content: "*";
+  color: red;
+  margin-left: 0.2rem;
 }
 
 /* just content: "" is not enough cause it's impact on right side of the frame */
-input:valid + .mandatory-sign::after, 
+input:valid + .mandatory-sign::after,
 select:valid + .mandatory-sign::after {
-    visibility: hidden;
+  visibility: hidden;
 }
 .get-in-touch-left-side {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-right: 1rem;
 }
 
 .get-in-touch-right-side {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    flex: 1;
-    margin-top: var(--my-margin-top-right-side);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  margin-top: var(--my-margin-top-right-side);
 }
 
 #message-id {
-    width: 100%;
-    min-width: 10rem;
-    height: 10rem;
-    margin-top: 0.5rem;
-    box-sizing: border-box;    
+  width: 100%;
+  min-width: 10rem;
+  height: 10rem;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
 }
 
 #message-label-id {
-    display: block;
-    margin-bottom: 0.25rem;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 /* Submit button position */
 .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
 }
 
 .red-blue-radial-gradient {
-    background: radial-gradient(circle, rgb(2, 120, 18), rgb(107, 107, 252));
-    color: var(--my-txt-color-3);
-    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.5);
-    width: 55%;
-    margin: 2rem auto;
-    display: block;
+  background: radial-gradient(circle, rgb(2, 120, 18), rgb(107, 107, 252));
+  color: var(--my-txt-color-3);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  width: 55%;
+  margin: 2rem auto;
+  display: block;
 }
 
 /* Sub-projects section design */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 0.65rem;
-    list-style: none;
-    padding: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.65rem;
+  list-style: none;
+  padding: 0.7rem;
 }
 
 .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .border {
-    border: 0.15rem var(--my-border-color) solid;
+  border: 0.15rem var(--my-border-color) solid;
 }
 
-.vertical-order{
-    display: flex;
-    flex-direction: column;
+.vertical-order {
+  display: flex;
+  flex-direction: column;
 }
 
 .button-link {
-    padding: 0.2rem 0.25rem;
-    margin-left: 0.5rem;
-    background-color: var(--my-button-bg-color);
-    color: var(--my-txt-color_2);
-    text-decoration: none;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    text-align: center;
+  padding: 0.2rem 0.25rem;
+  margin-left: 0.5rem;
+  background-color: var(--my-button-bg-color);
+  color: var(--my-txt-color_2);
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .button-link:hover {
-        background-color: #f4e802;
-    }
+  .button-link:hover {
+    background-color: #f4e802;
+  }
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .button-link:active {
-        background-color: #f4e802;
-    }
+  .button-link:active {
+    background-color: #f4e802;
+  }
 }
 
 .upload-cv {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 #pdf:checked ~ div .pdf {
-    display: inline-block;
+  display: inline-block;
 }
 
 #docx:checked ~ div .docx {
-    display: inline-block;
+  display: inline-block;
 }
 
 .download {
-    display: none;
+  display: none;
 }
 
 .socials {
-    justify-content: center;
-    margin: 1.5rem;
-    display: flex;
-    gap:0.5rem;
+  justify-content: center;
+  margin: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 /*
@@ -370,236 +387,234 @@ We need to override the width,
 cause default value in "details" tag is length of summary
 */
 #details-id {
-    width: 100%;
+  width: 100%;
 }
 
 #details-id.center .socials {
-    justify-content: center;
-    width: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 .image-box {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 0.5rem;
-    object-fit: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+  object-fit: contain;
 }
 
 /*Allow to screen-readers access to the text, 
 but without displaying it on the screen*/
 .sr-only {
-    position: absolute;
-    width: 0.1rem;
-    height: 0.1rem;
-    padding: 0;
-    margin: -0.1rem;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Allow to screen readers proper access to the tooltips */
 .tooltip-container {
-    position: relative;
-    display: inline;
-    cursor: help;
+  position: relative;
+  display: inline;
+  cursor: help;
 }
 
 .tooltip-container .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    white-space: nowrap;
-    padding: 0.25rem 0.4rem;
-    border: 0.1rem solid;
-    font-size: 0.9rem;
-    top: -1.6rem;
-    left: 0;
-    z-index: 10;
-    color: var(--my-txt-color);
-    background-color: var(--my-bg-color);
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0.25rem 0.4rem;
+  border: 0.1rem solid;
+  font-size: 0.9rem;
+  top: -1.6rem;
+  left: 0;
+  z-index: 10;
+  color: var(--my-txt-color);
+  background-color: var(--my-bg-color);
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .tooltip-container:active .tooltip-text,
-    .tooltip-container:focus .tooltip-text {
-        visibility: visible;
-    }
+  .tooltip-container:active .tooltip-text,
+  .tooltip-container:focus .tooltip-text {
+    visibility: visible;
+  }
 }
 
 .tooltip-container:hover .tooltip-text,
 .tooltip-container:focus .tooltip-text {
-    visibility: visible;
+  visibility: visible;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 0.65rem;
-    list-style: none;
-    padding: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.65rem;
+  list-style: none;
+  padding: 0.7rem;
 }
 
 .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .expandable {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;    
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    transition: transform 1.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 1.5s ease;
 }
 
-.expandable img {    
-    display: block;
-    width: 100%;
-    height: auto;
+.expandable img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .expandable:hover {
-    transform: scale(2.5);
-    opacity: 0.7;
+  transform: scale(2.5);
+  opacity: 0.7;
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .expandable:active {
-        transform: scale(2.5);
-        opacity: 0.7;
-    }
+  .expandable:active {
+    transform: scale(2.5);
+    opacity: 0.7;
+  }
 }
 
-
 .bottom-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--my-gap-bottom-menu);
-    list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--my-gap-bottom-menu);
+  list-style-type: none;
 }
 
 .divider {
-    border: none;
-    width: 85%;
-    height: 0.2rem;
-    background: radial-gradient(circle, rgb(255, 127, 127), rgb(107, 107, 252));
-    margin: 0.75rem auto;
-    display: block;
+  border: none;
+  width: 85%;
+  height: 0.2rem;
+  background: radial-gradient(circle, rgb(255, 127, 127), rgb(107, 107, 252));
+  margin: 0.75rem auto;
+  display: block;
 }
 
 .go-to-top {
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .go-to-top:active .go-home-text{
-        position: fixed;
-        bottom: var(--my-go-home-text-gap);
-        color: var(--my-txt-color-2);
-        right: 2%;
-        display: block;
-        font-size: var(--my-font-size);
-    }
-
-}
-
-.go-to-top:hover .go-home-text{
+  .go-to-top:active .go-home-text {
     position: fixed;
     bottom: var(--my-go-home-text-gap);
     color: var(--my-txt-color-2);
     right: 2%;
     display: block;
     font-size: var(--my-font-size);
+  }
 }
 
-.go-home-text{
-    display: none;
+.go-to-top:hover .go-home-text {
+  position: fixed;
+  bottom: var(--my-go-home-text-gap);
+  color: var(--my-txt-color-2);
+  right: 2%;
+  display: block;
+  font-size: var(--my-font-size);
+}
+
+.go-home-text {
+  display: none;
 }
 
 .left-space {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 
 /*main page hidden info design*/
 .greeting-card {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .greeting-card pre {
-    width: auto;
-    height: auto;
-    display: inline-block;
-    white-space: pre;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  white-space: pre;
 }
 
 .veil {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        color-mix(in srgb, var(--my-bg-color) 100%, transparent 0%) 100%,
-        color-mix(in srgb, var(--my-bg-color) 100%, transparent 100%) 100%
-    );
-    transform: translateY(0);
-    transition: transform 6s linear;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--my-bg-color) 100%, transparent 0%) 100%,
+    color-mix(in srgb, var(--my-bg-color) 100%, transparent 100%) 100%
+  );
+  transform: translateY(0);
+  transition: transform 6s linear;
+  pointer-events: none;
 }
 
 @media (hover: none) and (pointer: coarse) {
-    .greeting-card:active .veil,
-    #stay-opened-checkbox-id:checked ~ .veil {
-        transform: translateY(100%);
-    }
+  .greeting-card:active .veil,
+  #stay-opened-checkbox-id:checked ~ .veil {
+    transform: translateY(100%);
+  }
 }
 
 .greeting-card:hover .veil,
 #stay-opened-checkbox-id:checked ~ .veil {
-    transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .atomic-block {
-    display: inline-block;
-    white-space: pre;
-    text-align: left;
-    white-space: nowrap;
-    overflow-x: auto;
+  display: inline-block;
+  white-space: pre;
+  text-align: left;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 #stay-opened-label-id {
-    position: absolute;
-    bottom: 0;
-    right: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  right: 1.3rem;
 }
 
 #stay-opened-checkbox-id {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #stay-opened-checkbox-id:checked ~ .veil {
-    transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .strong-style {
-    font-weight: 800;
-    font-style: italic;
+  font-weight: 800;
+  font-style: italic;
 }
 
 .italic-style {
-    font-style: italic;
+  font-style: italic;
 }

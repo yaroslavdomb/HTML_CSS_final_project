@@ -21,6 +21,14 @@ summary.custom-h3{font-size:var(--my-font-size-h3)}
 .main-navigation ul li:active{background-color:var(--my-nav-menu-bg-color)}
 }
 .growing-text{display:inline-block;font-size:medium;transition:transform 1s ease}
+@media (hover:none) and (pointer:coarse){
+.growing-text:active{transform:scale(1.2)}
+}
+.growing-text:hover{transform:scale(1.2)}
+@media (hover:none) and (pointer:coarse){
+a.growing-text:active{color:#00f!important}
+}
+a.growing-text:hover{color:#00f!important}
 .main-section{flex:1}
 .custom-h2{padding:.75rem;margin:.75rem;text-align:center;border-bottom-left-radius:1.5rem;border-top-right-radius:1.5rem;border-color:#8a2be2;border-style:double;margin-top:2.5rem}
 .my-image{float:left;min-width:20%;width:23%;height:auto;object-fit:cover;border-radius:3rem;padding:.5rem}
